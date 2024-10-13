@@ -1,0 +1,250 @@
+
+local OrionLib
+local success, err = pcall(function()
+    OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+end)
+if not success then
+    error("无法加载OrionLib: " .. err)
+    return
+end
+
+
+local Window = OrionLib:MakeWindow({
+    Name = "宇定制", 
+    HidePremium = false, 
+    SaveConfig = true, 
+    ConfigFolder = "ATMControl"
+})
+
+
+local AboutTab = Window:MakeTab({
+    Name = "公告",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+
+AboutTab:AddLabel("您的注入器: " .. (identifyexecutor and identifyexecutor() or "未知"))
+AboutTab:AddLabel("您的用户名: " .. game.Players.LocalPlayer.Name)
+AboutTab:AddLabel("您的显示名称: " .. game.Players.LocalPlayer.DisplayName)
+AboutTab:AddLabel("您当前服务器的ID: " .. tostring(game.JobId))
+AboutTab:AddLabel("您的用户ID: " .. tostring(game.Players.LocalPlayer.UserId))
+AboutTab:AddLabel("您当前服务器的名称: " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name)
+AboutTab:AddLabel("获取客户端ID: " .. game:GetService("RbxAnalyticsService"):GetClientId())
+
+
+local Tab = Window:MakeTab({
+    Name = "传送",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+
+local bankPosition = Vector3.new(1057.1083984375, 8.914984703063965, -342.75482177734375)
+local weaponStorePosition = Vector3.new(1621.5947265625, 6.34171199798584, -630.1912841796875)
+local treasureStorePosition = Vector3.new(1688.4365234375, 18.134353637695312, -722.12841796875)
+
+
+Tab:AddButton({
+    Name = "传送到银行",
+    Callback = function()
+        character:SetPrimaryPartCFrame(CFrame.new(bankPosition))
+        OrionLib:MakeNotification({
+            Name = "成功传送",
+            Content = "你已被传送到银行。",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
+    end
+})
+
+
+Tab:AddButton({
+    Name = "传送到武器店",
+    Callback = function()
+        character:SetPrimaryPartCFrame(CFrame.new(weaponStorePosition))
+        OrionLib:MakeNotification({
+            Name = "成功传送",
+            Content = "你已被传送到武器店。",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
+    end
+})
+
+
+Tab:AddButton({
+    Name = "传送到珍宝店",
+    Callback = function()
+        character:SetPrimaryPartCFrame(CFrame.new(treasureStorePosition))
+        OrionLib:MakeNotification({
+            Name = "成功传送",
+            Content = "你已被传送到珍宝店。",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
+    end
+})
+
+
+Tab:AddButton({
+    Name = "宇独家开保险柜",
+    Callback = function()
+        local Proximits = {}
+
+        
+        for _, i in pairs(workspace:GetDescendants()) do
+            if i:IsA("ProximityPrompt") then
+                i.HoldDuration = 0
+                i.MaxActivationDistance = math.huge
+                i.RequiresLineOfSight = false
+                i.Exclusivity = Enum.ProximityPromptExclusivity.AlwaysShow
+                table.insert(Proximits, i)
+            end
+        end
+
+        
+        workspace.DescendantAdded:Connect(function(descendant)
+            if descendant:IsA("ProximityPrompt") then
+                descendant.HoldDuration = 0
+                descendant.MaxActivationDistance = math.huge
+                descendant.RequiresLineOfSight = false
+                descendant.Exclusivity = Enum.ProximityPromptExclusivity.AlwaysShow
+                table.insert(Proximits, descendant)
+            end
+        end)
+
+        
+        OrionLib:MakeNotification({
+            Name = "ProximityPrompt配置已启用",
+            Content = "保险柜已解锁配置。",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
+    end
+})
+
+
+local WallTab = Window:MakeTab({
+    Name = "穿墙功能",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+
+local noclipEnabled = false
+local connection
+local wallStatusLabel = WallTab:AddLabel("穿墙状态: 已暂停")
+
+
+WallTab:AddButton({
+    Name = "穿墙 开/关",
+    Callback = function()
+        noclipEnabled = not noclipEnabled
+        if noclipEnabled then
+            connection = game:GetService("RunService").Stepped:Connect(function()
+                for _, v in pairs(player.Character:GetDescendants()) do
+                    if v:IsA("BasePart") and v.CanCollide then
+                        v.CanCollide = false
+                    end
+                end
+            end)
+            wallStatusLabel:Set("穿墙状态: 已开启")
+            OrionLib:MakeNotification({
+                Name = "穿墙功能已启用",
+                Content = "你现在可以穿墙。",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+        else
+            if connection then
+                connection:Disconnect()
+            end
+            for _, v in pairs(player.Character:GetDescendants()) do
+                if v:IsA("BasePart") then
+                    v.CanCollide = true
+                end
+            end
+            wallStatusLabel:Set("穿墙状态: 已暂停")
+            OrionLib:MakeNotification({
+                Name = "穿墙功能已禁用",
+                Content = "穿墙功能已关闭。",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+        end
+    end
+})
+
+
+local RangeTab = Window:MakeTab({
+    Name = "范围设置",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+
+_G.HeadSize = 15
+_G.Disabled = true
+
+
+RangeTab:AddTextbox({
+    Name = "输入范围大小",
+    Default = "15",
+    TextDisappear = true,
+    Callback = function(value)
+        local numberValue = tonumber(value)
+        if numberValue then
+            _G.HeadSize = numberValue
+            OrionLib:MakeNotification({
+                Name = "范围大小已设置",
+                Content = "当前范围大小: " .. value,
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+        else
+            OrionLib:MakeNotification({
+                Name = "输入无效",
+                Content = "请输入有效的数字。",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+        end
+    end
+})
+
+
+RangeTab:AddToggle({
+    Name = "启用/禁用范围修改",
+    Default = false,
+    Callback = function(state)
+        _G.Disabled = not state
+    end
+})
+
+
+game:GetService('RunService').RenderStepped:Connect(function()
+    if not _G.Disabled then
+        for _, v in pairs(game:GetService('Players'):GetPlayers()) do
+            if v.Name ~= player.Name then
+                pcall(function()
+                    local hrp = v.Character:FindFirstChild("HumanoidRootPart")
+                    if hrp then
+                        hrp.Size = Vector3.new(_G.HeadSize, _G.HeadSize, _G.HeadSize)
+                        hrp.Transparency = 0.7
+                        hrp.BrickColor = BrickColor.new("Really white")
+                        hrp.Material = Enum.Material.Neon
+                        hrp.CanCollide = false
+                    end
+                end)
+            end
+        end
+    end
+end)
+
+
+OrionLib:Init()
