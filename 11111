@@ -1,28 +1,2512 @@
-local function displayAnnouncement(player, text)
-    local billboardGui = Instance.new("BillboardGui")
-    billboardGui.Size = UDim2.new(0, 200, 0, 50)
-    billboardGui.StudsOffset = Vector3.new(0, 3, 0)
-    billboardGui.AlwaysOnTop = true
-    billboardGui.Parent = player.Character and player.Character:FindFirstChild("Head")
 
-    local textLabel = Instance.new("TextLabel")
-    textLabel.Size = UDim2.new(1, 0, 1, 0)
-    textLabel.BackgroundTransparency = 1
-    textLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
-    textLabel.TextScaled = true
-    textLabel.Text = text
-    textLabel.Parent = billboardGui
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/weakhoes/Roblox-UI-Libs/refs/heads/main/Orion%20Lib/Orion%20Lib%20Source.lua')))()
+local Window = OrionLib:MakeWindow({Name = 'YFHUB', HidePremium = false, SaveConfig = true, ConfigFolder = 'OrionTest', IntroText = 'YFHUB BY YF'})
+OrionLib:MakeNotification({
+    Name = '尊敬的用户：',
+    Content = '感谢您支持YUYU！',
+    Image = 'rbxassetid://4483345998',
+    Time = 5
+})
+local Home = Window:MakeTab({
+    Name = '主页',
+    Icon = 'rbxassetid://7733960981',
+    PremiumOnly = false
+})
+local jyrs = Window:MakeTab({
+    Name = '监狱人生',
+    Icon = 'rbxassetid://7733771891',
+    PremiumOnly = false
+})
+local xsdsd = Window:MakeTab({
+    Name = '现实的深度',
+    Icon = 'rbxassetid://7733771891',
+    PremiumOnly = false
+})
+local race = Window:MakeTab({
+    Name = 'Race Click',
+    Icon = 'rbxassetid://7733771891',
+    PremiumOnly = false
+})
+Home:AddParagraph('YUYU制作','官方QQ3291165933')
+Home:AddDropdown({
+    Name = '脚本',
+    Default = '',
+    Options = {'俄亥俄州','吸人','命令行','追踪','DEX'},
+    Callback = function(Value)
+    if Value == '俄亥俄州' then
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/weakhoes/Roblox-UI-Libs/refs/heads/main/Orion%20Lib/Orion%20Lib%20Source.lua')))()
+local Window = OrionLib:MakeWindow({Name = 'YFHUB|OHIO', HidePremium = false, SaveConfig = true, ConfigFolder = 'OrionTest', IntroText = 'YFHUB|OHIO'})
+game:GetService('Players').LocalPlayer.PlayerGui.Hotbar.Enabled = true
+game:GetService('Players').LocalPlayer.PlayerGui.Chat.Frame.ChatChannelParentFrame.Visible = true
+game:GetService('Players').LocalPlayer.PlayerGui.Chat.Frame.ChatChannelParentFrame.Position = UDim2.new(0, 0, 0, 40)
+game:GetService('Players').LocalPlayer.PlayerGui.Money.Container.premium.Shadow.Visible = false
+game:GetService('Players').LocalPlayer.PlayerGui.Money.Container['2x cash'].Shadow.Visible = false
+game:GetService('Players').LocalPlayer.PlayerGui.Money.Container.premium.Visible = true
+game:GetService('Players').LocalPlayer.PlayerGui.Money.Container.premium.TextLabel.Text = 'OHIO.YF'
+game:GetService('Players').LocalPlayer.PlayerGui.Money.Container['2x cash'].Visible = true
+game:GetService('Players').LocalPlayer.PlayerGui.Money.Container['2x cash'].TextLabel.Text = '双倍现金 永久有效'
+game:GetService('Workspace').BlackMarket.Dealer.Dealer.ProximityPrompt.HoldDuration = 0
+game:GetService('Workspace').BlackMarket.BlackMarketBillboard.TopLabel.Text = 'YF黑市'
+game:GetService('Workspace').BlackMarket.BlackMarketBillboard.BottomLabel.Text = '向YF出售物品以获得钱!'
+game:GetService('Workspace').OhioSign.Screen.SurfaceGui.Frame.Population.Text = 'YF祝您玩的愉快'
+local Teams = game:GetService('Teams')
+local newTeam = Instance.new('Team')
+newTeam.Name = 'DevvGames'
+newTeam.Parent = Teams
+local player = game:GetService('Players').LocalPlayer
+player.Team = newTeam
+local UserInputService = game:GetService('UserInputService')
+UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+    if input.KeyCode == Enum.KeyCode.Z then
+        game:GetService('Players').LocalPlayer.PlayerGui.Backpack.Holder.Locker.Visible = true
+    end
+end)
+local Fram = Window:MakeTab({
+    Name = '资源类',
+    Icon = 'rbxassetid://7733771891',
+    PremiumOnly = false
+})
+local Cheat = Window:MakeTab({
+    Name = '修改类',
+    Icon = 'rbxassetid://7733771891',
+    PremiumOnly = false
+})
+Fram:AddDropdown({
+    Name = '瞬移',
+    Default = '',
+    Options = {'银行','珠宝店','沙滩','武器店（撬锁）','武士刀','射线枪','加特林','锯掉','沙漠之鹰','警察局（M4A1）','AUG','军事基地（军甲）'},
+    Callback = function(Value)
+    local epoh2 = game:GetService('Players')
+    local epoh3 = epoh2.LocalPlayer.Character.HumanoidRootPart
+    if Value == '银行' then
+        local epoh1 = CFrame.new(1055.94153, 15.11950874, -344.58374)
+        epoh3.CFrame = epoh1
+    elseif Value == '珠宝店' then
+        local epoh1 = CFrame.new(1719.02637, 14.2831011, -714.293091)
+        epoh3.CFrame = epoh1
+    elseif Value == '沙滩' then
+        local epoh1 = CFrame.new(998.4656372070312, 15, 395.9789733886719)
+        epoh3.CFrame = epoh1
+    elseif Value == '武器店（撬锁）' then
+        local epoh1 = CFrame.new(660.5284423828125, 6.4081127643585205, -716.489990234375)
+        epoh3.CFrame = epoh1
+    elseif Value == '武士刀' then
+        local epoh1 = CFrame.new(175.191, 13.937, -132.69)
+        epoh3.CFrame = epoh1
+    elseif Value == '射线枪' then
+        local epoh1 = CFrame.new(148.685471, -90, -529.280945)
+        epoh3.CFrame = epoh1
+    elseif Value == '加特林' then
+        local epoh1 = CFrame.new(364.97076416015625, 0.764974117279053, -1447.3302001953125)
+        epoh3.CFrame = epoh1
+    elseif Value == '锯掉' then
+        local epoh1 = CFrame.new(1179.98523,40,-436.812683)
+        epoh3.CFrame = epoh1
+    elseif Value == '沙漠之鹰' then
+        local epoh1 = CFrame.new(363.341461, 26.0798492, -259.681396)
+        epoh3.CFrame = epoh1
+    elseif Value == '警察局（M4A1）' then
+        local epoh1 = CFrame.new(603.4676513671875,25.662811279296875,-922.0442504882812)
+        epoh3.CFrame = epoh1
+    elseif Value == 'AUG' then
+        local epoh1 = CFrame.new(1170.500244140625,48.37138366699219,-772.55859375)
+        epoh3.CFrame = epoh1
+    elseif Value == '军事基地（军甲）' then
+        local epoh1 = CFrame.new(563.4422607421875,28.502071380615234,-1472.780517578125)
+        epoh3.CFrame = epoh1
+    end
+    end
+})
+Fram:AddToggle({
+    Name = '银行刷新提醒',
+    Callback = function(Value)
+    Bank1 = Value
+        if Bank1 then
+            Bank2()
+        end
+    end    
+})
+Bank2 = function()
+    while Bank1 do
+    wait(0.1)
+    local Bank = game:GetService('Workspace').BankRobbery.BankCash.Cash:FindFirstChild('Bundle')
+        if Bank then
+            OrionLib:MakeNotification({
+                Name = '提示：',
+                Content = '银行已刷新！',
+                Image = 'rbxassetid://4483345998',
+                Time = 5
+            })
+            wait(30)
+        end
+    end
+end
+Fram:AddToggle({
+    Name = '珠宝店刷新提醒',
+    Callback = function(Value)
+    Gem1 = Value
+        if Gem1 then
+            Gem2()
+        end
+    end    
+})
+Gem2 = function()
+    while Gem1 do
+    wait(0.1)
+    local Ge = game:GetService('Workspace').GemRobbery:FindFirstChild('Rubble')
+        if Ge then
+            OrionLib:MakeNotification({
+                Name = '提示：',
+                Content = '珠宝店已刷新！',
+                Image = 'rbxassetid://4483345998',
+                Time = 5
+            })
+            wait(30)
+        end
+    end
+end
+Fram:AddToggle({
+    Name = '自动银行',
+    Callback = function(Value)
+    AutoBank1 = Value
+        if AutoBank1 then
+            AutoBank2()
+        end
+    end    
+})
+AutoBank2 = function()
+    while AutoBank1 do
+        wait()
+        local BankDoor = game:GetService("Workspace").BankRobbery.VaultDoor
+        local BankCashs = game:GetService("Workspace").BankRobbery.BankCash
+        local epoh2 = game:GetService('Players')
+        local epoh3 = epoh2.LocalPlayer.Character.HumanoidRootPart
+        if BankDoor.Door.Attachment.ProximityPrompt.Enabled == true then
+            BankDoor.Door.Attachment.ProximityPrompt.HoldDuration = 0
+            BankDoor.Door.Attachment.ProximityPrompt.MaxActivationDistance = 16
+            local epoh1 = CFrame.new(1071.955810546875, 9, -343.80816650390625)
+            epoh3.CFrame = epoh1
+           wait(1)
+            BankDoor.Door.Attachment.ProximityPrompt:InputHoldBegin()
+            BankDoor.Door.Attachment.ProximityPrompt:InputHoldEnd()
+            BankDoor.Door.Attachment.ProximityPrompt.Enabled = false
+        end
+        if BankCashs.Cash.Bundle then
+            local epoh1 = CFrame.new(1055.872802734375, 10, -344.6944580078125)
+            epoh3.CFrame = epoh1
+            BankCashs.Main.Attachment.ProximityPrompt.MaxActivationDistance = 16
+            if BankCashs.Cash.Bundle then
+            BankCashs.Main.Attachment.ProximityPrompt:InputHoldBegin()
+            wait(45)
+            BankCashs.Main.Attachment.ProximityPrompt:InputHoldEnd()
+            local epoh1 = CFrame.new(240.52850341796875, -120, -620)
+            epoh3.CFrame = epoh1
+            end
+        end   
+        if not BankCashs.Cash.Bundle then
+            local epoh1 = CFrame.new(240.52850341796875, -120, -620)
+            epoh3.CFrame = epoh1
+        end
+    end
+end
+Fram:AddToggle({
+    Name = '自动金保险',
+    Callback = function(Value)
+    AutoSafe1 = Value
+        if AutoSafe1 then
+            AutoSafe2()
+        end
+    end    
+})
+AutoSafe2 = function()
+    while AutoSafe1 do
+        wait()
+        local BankDoor = game:GetService("Workspace").BankRobbery.VaultDoor
+        local epoh2 = game:GetService('Players')
+        local epoh3 = epoh2.LocalPlayer.Character.HumanoidRootPart
+        if BankDoor.Door.Attachment.ProximityPrompt.Enabled == true then
+            BankDoor.Door.Attachment.ProximityPrompt.HoldDuration = 0
+            BankDoor.Door.Attachment.ProximityPrompt.MaxActivationDistance = 16
+            local epoh1 = CFrame.new(1071.955810546875, 9, -343.80816650390625)
+            epoh3.CFrame = epoh1
+            wait(1)
+            BankDoor.Door.Attachment.ProximityPrompt:InputHoldBegin()
+            BankDoor.Door.Attachment.ProximityPrompt:InputHoldEnd()
+            BankDoor.Door.Attachment.ProximityPrompt.Enabled = false
+        end
+        local GoldJewelSafes = game:GetService("Workspace").Game.Entities.GoldJewelSafe
+        local foundModel = false
+        for _, model in pairs(GoldJewelSafes:GetChildren()) do
+            if model.ClassName == 'Model' then
+                foundModel = true
+                local epoh1 = model.WorldPivot
+                epoh3.CFrame = epoh1
+                wait(1)
+                model.Door["Meshes/LargeSafe_Cube.002_Cube.003_None (1)"].Attachment.ProximityPrompt.HoldDuration = 0
+                model.Door["Meshes/LargeSafe_Cube.002_Cube.003_None (1)"].Attachment.ProximityPrompt.MaxActivationDistance = 16
+                if model.Door["Meshes/LargeSafe_Cube.002_Cube.003_None (1)"].Attachment.ProximityPrompt.Enabled == true then
+                    model.Door["Meshes/LargeSafe_Cube.002_Cube.003_None (1)"].Attachment.ProximityPrompt:InputHoldBegin()
+                    model.Door["Meshes/LargeSafe_Cube.002_Cube.003_None (1)"].Attachment.ProximityPrompt:InputHoldEnd()
+                    wait(5)
+                    model:Destroy()
+                    break
+                end
+            end
+        end
+        if not foundModel then
+            OrionLib:MakeNotification({
+                Name = '提示：',
+                Content = '金保险未刷新！',
+                Image = 'rbxassetid://4483345998',
+                Time = 5
+            })
+            wait(30)
+        end
+    end
+end
+Fram:AddToggle({
+    Name = '自动黑保险',
+    Callback = function(Value)
+    AutoSafe3 = Value
+        if AutoSafe3 then
+            AutoSafe4()
+        end
+    end    
+})
+AutoSafe4 = function()
+    while AutoSafe3 do
+        wait()
+        local BankDoor = game:GetService("Workspace").BankRobbery.VaultDoor
+        local epoh2 = game:GetService('Players')
+        local epoh3 = epoh2.LocalPlayer.Character.HumanoidRootPart
+        if BankDoor.Door.Attachment.ProximityPrompt.Enabled == true then
+            BankDoor.Door.Attachment.ProximityPrompt.HoldDuration = 0
+            BankDoor.Door.Attachment.ProximityPrompt.MaxActivationDistance = 16
+            local epoh1 = CFrame.new(1071.955810546875, 9, -343.80816650390625)
+            epoh3.CFrame = epoh1
+            wait(1)
+            BankDoor.Door.Attachment.ProximityPrompt:InputHoldBegin()
+            BankDoor.Door.Attachment.ProximityPrompt:InputHoldEnd()
+            BankDoor.Door.Attachment.ProximityPrompt.Enabled = false
+        end
+        local JewelSafes = game:GetService("Workspace").Game.Entities.JewelSafe
+        local foundModel = false
+        for _, model in pairs(JewelSafes:GetChildren()) do
+            if model.ClassName == 'Model' then
+                foundModel = true
+                local epoh1 = model.WorldPivot
+                epoh3.CFrame = epoh1
+                wait(1)
+                model.Door["Meshes/LargeSafe_Cube.002_Cube.003_None (1)"].Attachment.ProximityPrompt.HoldDuration = 0
+                model.Door["Meshes/LargeSafe_Cube.002_Cube.003_None (1)"].Attachment.ProximityPrompt.MaxActivationDistance = 16
+                if model.Door["Meshes/LargeSafe_Cube.002_Cube.003_None (1)"].Attachment.ProximityPrompt.Enabled == true then
+                    model.Door["Meshes/LargeSafe_Cube.002_Cube.003_None (1)"].Attachment.ProximityPrompt:InputHoldBegin()
+                    model.Door["Meshes/LargeSafe_Cube.002_Cube.003_None (1)"].Attachment.ProximityPrompt:InputHoldEnd()
+                    wait(5)
+                    model:Destroy()
+                end
+            end
+        end
+        if not foundModel then
+            OrionLib:MakeNotification({
+                Name = '提示：',
+                Content = '黑保险未刷新！',
+                Image = 'rbxassetid://4483345998',
+                Time = 5
+            })
+            wait(30)
+        end
+    end
+end
+Fram:AddToggle({
+    Name = '自动小宝箱',
+    Default = false,
+    Callback = function(Value)
+    SmallChest1 = Value
+        if SmallChest1 then
+            SmallChest2()
+        end
+    end    
+})
+SmallChest2 = function()
+    while SmallChest1 do
+    wait()
+    local SmallChes = game:GetService('Workspace').Game.Entities.SmallChest
+        local foundModel = false
+        for _, model in pairs(SmallChes:GetChildren()) do
+            if model.ClassName == 'Model' then
+                foundModel = true
+                local epoh1 = model.WorldPivot
+                local epoh2 = game:GetService('Players')
+                local epoh3 = epoh2.LocalPlayer.Character.HumanoidRootPart
+                epoh3.CFrame = epoh1
+                wait(0.3)
+                model.Lock["Meshes/untitled_chest.002_Material.009 (4)"].Attachment.ProximityPrompt:InputHoldBegin()
+                model.Lock["Meshes/untitled_chest.002_Material.009 (4)"].Attachment.ProximityPrompt:InputHoldEnd()
+                wait(0.3)
+                local epoh1 = CFrame.new(240.52850341796875, -120, -620)
+                epoh3.CFrame = epoh1
+                break
+            end
+        end
+        if not foundModel then
+            OrionLib:MakeNotification({
+                Name = '提示：',
+                Content = '小宝箱未刷新！',
+                Image = 'rbxassetid://4483345998',
+                Time = 5
+            })
+            wait(30)
+        end
+    end
+end
+Fram:AddToggle({
+    Name = '瞬移大宝箱',
+    Default = false,
+    Callback = function(Value)
+    LargeChest1 = Value
+        if LargeChest1 then
+            LargeChest2()
+        end
+    end    
+})
+LargeChest2 = function()
+    while LargeChest1 do
+    wait()
+    local LargeChes = game:GetService('Workspace').Game.Entities.LargeChest
+        local foundModel = false
+        for _, model in pairs(LargeChes:GetChildren()) do
+            if model.ClassName == 'Model' then
+                foundModel = true
+                local epoh1 = model.WorldPivot
+                local epoh2 = game:GetService('Players')
+                local epoh3 = epoh2.LocalPlayer.Character.HumanoidRootPart
+                epoh3.CFrame = epoh1
+                wait(0.3)
+                model.Door["Meshes/LargeSafe1_Cube.002_Cube.003_None (3)"].Attachment.ProximityPrompt:InputHoldBegin()
+                model.Door["Meshes/LargeSafe1_Cube.002_Cube.003_None (3)"].Attachment.ProximityPrompt:InputHoldEnd()
+                wait(0.3)
+                local epoh1 = CFrame.new(240.52850341796875, -120, -620)
+                epoh3.CFrame = epoh1
+                break
+            end
+        end
+        if not foundModel then
+            OrionLib:MakeNotification({
+                Name = '提示：',
+                Content = '大宝箱未刷新！',
+                Image = 'rbxassetid://4483345998',
+                Time = 5
+            })
+            wait(30)
+        end
+    end
 end
 
-local player = game.Players.LocalPlayer
-displayAnnouncement(player, "加微信wby11116666")
+Fram:AddToggle({
+    Name = '瞬移小保险+秒开',
+    Default = false,
+    Callback = function(Value)
+    SmallSafe1 = Value
+        if SmallSafe1 then
+            SmallSafe2()
+        end
+    end    
+})
+SmallSafe2 = function()
+    while SmallSafe1 do
+    wait(0.1)
+    local SmallSaf = game:GetService('Workspace').Game.Entities.SmallSafe
+        local foundModel = false
+        for _, model in pairs(SmallSaf:GetChildren()) do
+            if model.ClassName == 'Model' then
+                foundModel = true 
+                local epoh1 = model.WorldPivot
+                local epoh2 = game:GetService('Players')
+                local epoh3 = epoh2.LocalPlayer.Character.HumanoidRootPart
+                SmallSaf.SmallSafe.Door['Meshes/Safe1_Cube.002_Cube.003_None (1)'].Attachment.ProximityPrompt.HoldDuration = 0
+                epoh3.CFrame = epoh1
+                break
+            end
+        end
+        if not foundModel then
+            OrionLib:MakeNotification({
+                Name = '提示：',
+                Content = '小保险未刷新！',
+                Image = 'rbxassetid://4483345998',
+                Time = 5
+            })
+            wait(30)
+        end
+    end
+end
+Fram:AddToggle({
+    Name = '瞬移印钞机',
+    Default = false,
+    Callback = function(Value)
+    MoneyPrint1 = Value
+        if MoneyPrint1 then
+            MoneyPrint2()
+        end
+    end    
+})
+MoneyPrint2 = function()
+    while MoneyPrint1 do
+    wait(0.1)
+    while true do
+            for i,l in pairs(game:GetService('Workspace').Game.Entities.ItemPickup:GetChildren()) do
+                for i,v in pairs(l:GetChildren()) do
+                    if v.ClassName == 'MeshPart' or 'Part' then
+                        for i,e in pairs(v:GetChildren()) do
+                            if e.ClassName == 'ProximityPrompt' then
+                                if e.ObjectText == 'Money Printer' then
+                                    local epoh1 = v.CFrame
+                                    local epoh2 = game:GetService('Players')
+                                    local epoh3 = epoh2.LocalPlayer.Character.HumanoidRootPart
+                                    epoh3.CFrame = epoh1
+                                else
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/rbxluau/Roblox/main/"..(({
-    [2820580801] = "Ohio",
-    [111958650] = "Arsenal",
-    [2440500124] = "Doors",
-    [3476371299] = "RaceClicker",
-    [3085257211] = "RainbowFriends",
-    [73885730] = "PrisonLife"
-})[game.GameId] or "Universal")..".lua"))()
-local v0=tonumber;local v1=string.byte;local v2=string.char;local v3=string.sub;local v4=string.gsub;local v5=string.rep;local v6=table.concat;local v7=table.insert;local v8=math.ldexp;local v9=getfenv or function() return _ENV;end ;local v10=setmetatable;local v11=pcall;local v12=select;local v13=unpack or table.unpack ;local v14=tonumber;local function v15(v16,v17,...) local v18=1;local v19;v16=v4(v3(v16,5),"..",function(v30) if (v1(v30,2)==81) then local v81=0;while true do if (v81==0) then v19=v0(v3(v30,1,1));return "";end end else local v82=0;local v83;while true do if (v82==0) then v83=v2(v0(v30,16));if v19 then local v106=v5(v83,v19);v19=nil;return v106;else return v83;end break;end end end end);local function v20(v31,v32,v33) if v33 then local v84=(v31/(2^(v32-((1 + 1) -1))))%(2^(((v33-1) -(v32-(2 -1))) + (1 -0))) ;return v84-(v84%((1 + 1) -1)) ;else local v85=((1498 -(282 + 595)) -(555 + 64))^(v32-(932 -(857 + (1711 -(1523 + 114))))) ;return (((v31%(v85 + v85))>=v85) and (569 -(367 + 201))) or (927 -(193 + 21 + 713)) ;end end local function v21() local v34=0 -0 ;local v35;while true do if (v34==(1066 -(67 + 1 + 997))) then return v35;end if (v34==(1270 -(226 + 1044))) then v35=v1(v16,v18,v18);v18=v18 + (4 -(1 + 2)) ;v34=118 -(32 + 85) ;end end end local function v22() local v36,v37=v1(v16,v18,v18 + 2 );v18=v18 + (959 -(892 + 65)) ;return (v37 * (610 -354)) + v36 ;end local function v23() local v38,v39,v40,v41=v1(v16,v18,v18 + (5 -2) );v18=v18 + (7 -3) ;return (v41 * (16777566 -(87 + (645 -382)))) + (v40 * (65716 -(67 + 113))) + (v39 * (188 + 68)) + v38 ;end local function v24() local v42=v23();local v43=v23();local v44=1 + 0 ;local v45=(v20(v43,1,(97 -(10 + 8)) -59 ) * ((954 -(802 + (577 -427)))^((527 -(416 + 26)) -53))) + v42 ;local v46=v20(v43,37 -16 ,(73 -50) + 8 );local v47=((v20(v43,32)==(998 -(915 + 36 + 46))) and  -(2 -1)) or (1 + 0) ;if (v46==(0 -(0 -0))) then if (v45==0) then return v47 * (1187 -(1069 + 118)) ;else v46=2 -1 ;v44=0 -0 ;end elseif (v46==(356 + 1691)) then return ((v45==0) and (v47 * ((1 -0)/0))) or (v47 * NaN) ;end return v8(v47,v46-(1015 + (446 -(145 + 293))) ) * (v44 + (v45/((793 -(368 + 423))^(163 -111)))) ;end local function v25(v48) local v49;if  not v48 then local v86=(1202 -(201 + 571)) -(44 + 386) ;while true do if (v86==(1486 -(998 + (1626 -(116 + 1022))))) then v48=v23();if (v48==(0 + 0)) then return "";end break;end end end v49=v3(v16,v18,(v18 + v48) -(1 + 0) );v18=v18 + v48 ;local v50={};for v65=1, #v49 do v50[v65]=v2(v1(v3(v49,v65,v65)));end return v6(v50);end local v26=v23;local function v27(...) return {...},v12("#",...);end local function v28() local v51=(function() return 1784 -(599 + 1185) ;end)();local v52=(function() return;end)();local v53=(function() return;end)();local v54=(function() return;end)();local v55=(function() return;end)();local v56=(function() return;end)();local v57=(function() return;end)();local v58=(function() return;end)();while true do if (0~=v51) then else local v90=(function() return 0;end)();while true do if (v90==(1 + 0)) then v54=(function() return {};end)();v55=(function() return {};end)();v90=(function() return 2 + 0 ;end)();end if (v90==0) then v52=(function() return function(v107,v108,v109) local v110=(function() return 574 -(507 + 67) ;end)();local v111=(function() return;end)();while true do if (v110~=0) then else v111=(function() return 0;end)();while true do if (0~=v111) then else local v127=(function() return 1749 -(1013 + 736) ;end)();while true do if (v127==(0 + 0)) then v107[v108-#"[" ]=(function() return v109();end)();return v107,v108,v109;end end end end break;end end end;end)();v53=(function() return {};end)();v90=(function() return 1;end)();end if ((4 -2)==v90) then v51=(function() return 1;end)();break;end end end if (v51~=(3 -2)) then else local v91=(function() return 0;end)();local v92=(function() return;end)();while true do if (v91==0) then v92=(function() return 0;end)();while true do if (v92==0) then v56=(function() return {v53,v54,nil,v55};end)();v57=(function() return v23();end)();v92=(function() return 868 -(550 + 317) ;end)();end if (1~=v92) then else v58=(function() return {};end)();for v115= #"\\",v57 do local v116=(function() return 0 -0 ;end)();local v117=(function() return;end)();local v118=(function() return;end)();while true do if (v116~=0) then else v117=(function() return v21();end)();v118=(function() return nil;end)();v116=(function() return 1 -0 ;end)();end if (v116~=(2 -1)) then else if (v117== #",") then v118=(function() return v21()~=(285 -(134 + 151)) ;end)();elseif (v117==(1667 -(970 + 695))) then v118=(function() return v24();end)();elseif (v117== #"91(") then v118=(function() return v25();end)();end v58[v115]=(function() return v118;end)();break;end end end v92=(function() return 3 -1 ;end)();end if (v92==(1992 -(582 + 1408))) then v51=(function() return 2;end)();break;end end break;end end end if (v51~=2) then else v56[ #"xnx"]=(function() return v21();end)();for v94= #"~",v23() do local v95=(function() return v21();end)();if (v20(v95, #"}", #"{")~=(0 -0)) then else local v101=(function() return 0 -0 ;end)();local v102=(function() return;end)();local v103=(function() return;end)();local v104=(function() return;end)();local v105=(function() return;end)();while true do if (v101==0) then local v112=(function() return 0;end)();while true do if (v112==(0 -0)) then v102=(function() return 0;end)();v103=(function() return nil;end)();v112=(function() return 1825 -(1195 + 629) ;end)();end if (v112==(1 -0)) then v101=(function() return 1;end)();break;end end end if (v101~=2) then else while true do if (v102==(241 -(187 + 54))) then local v119=(function() return 780 -(162 + 618) ;end)();local v120=(function() return;end)();while true do if (v119==0) then v120=(function() return 0;end)();while true do if ((0 + 0)~=v120) then else v103=(function() return v20(v95,2 + 0 , #"91(");end)();v104=(function() return v20(v95, #".dev",6);end)();v120=(function() return 1 -0 ;end)();end if (v120==1) then v102=(function() return  #"{";end)();break;end end break;end end end if (v102~= #"asd") then else if (v20(v104, #"xxx", #"-19")~= #"[") then else v105[ #".com"]=(function() return v58[v105[ #"asd1"]];end)();end v53[v94]=(function() return v105;end)();break;end if (v102~=(2 -0)) then else local v122=(function() return 0 + 0 ;end)();local v123=(function() return;end)();while true do if (v122==(1636 -(1373 + 263))) then v123=(function() return 1000 -(451 + 549) ;end)();while true do if (v123==(1 + 0)) then v102=(function() return  #"xxx";end)();break;end if (v123==(0 -0)) then if (v20(v104, #"\\", #",")== #"|") then v105[2 -0 ]=(function() return v58[v105[1386 -(746 + 638) ]];end)();end if (v20(v104,2,2)== #"\\") then v105[ #"91("]=(function() return v58[v105[ #"asd"]];end)();end v123=(function() return 1;end)();end end break;end end end if (v102~= #"~") then else local v124=(function() return 0;end)();local v125=(function() return;end)();while true do if (0~=v124) then else v125=(function() return 0 + 0 ;end)();while true do if ((1 -0)==v125) then v102=(function() return 2;end)();break;end if (v125==(341 -(218 + 123))) then v105=(function() return {v22(),v22(),nil,nil};end)();if (v103==(1581 -(1535 + 46))) then local v376=(function() return 0 + 0 ;end)();local v377=(function() return;end)();while true do if (v376==0) then v377=(function() return 0 + 0 ;end)();while true do if (v377~=0) then else v105[ #"asd"]=(function() return v22();end)();v105[ #".dev"]=(function() return v22();end)();break;end end break;end end elseif (v103== #">") then v105[ #"-19"]=(function() return v23();end)();elseif (v103==(562 -(306 + 254))) then v105[ #"asd"]=(function() return v23() -(2^16) ;end)();elseif (v103== #"91(") then local v393=(function() return 0;end)();local v394=(function() return;end)();while true do if (0==v393) then v394=(function() return 0;end)();while true do if (v394==(0 + 0)) then v105[ #"xxx"]=(function() return v23() -(2^(30 -14)) ;end)();v105[ #"asd1"]=(function() return v22();end)();break;end end break;end end end v125=(function() return 1468 -(899 + 568) ;end)();end end break;end end end end break;end if ((1 + 0)==v101) then local v113=(function() return 0 -0 ;end)();local v114=(function() return;end)();while true do if (v113~=(603 -(268 + 335))) then else v114=(function() return 0;end)();while true do if (v114==(291 -(60 + 230))) then v101=(function() return 2;end)();break;end if ((572 -(426 + 146))~=v114) then else v104=(function() return nil;end)();v105=(function() return nil;end)();v114=(function() return 1 + 0 ;end)();end end break;end end end end end end for v96= #"{",v23() do v54,v96,v28=(function() return v52(v54,v96,v28);end)();end return v56;end end end local function v29(v59,v60,v61) local v62=v59[1457 -(123 + 159 + 1174) ];local v63=v59[813 -(554 + 15 + 242) ];local v64=v59[8 -5 ];return function(...) local v67=v62;local v68=v63;local v69=v64;local v70=v27;local v71=1 + 0 ;local v72= -(1025 -(706 + 318));local v73={};local v74={...};local v75=v12("#",...) -1 ;local v76={};local v77={};for v87=1271 -(945 + 326) ,v75 do if (v87>=v69) then v73[v87-v69 ]=v74[v87 + 1 ];else v77[v87]=v74[v87 + (2 -1) ];end end local v78=(v75-v69) + 1 + 0 ;local v79;local v80;while true do v79=v67[v71];v80=v79[701 -(271 + 429) ];if (v80<=(33 + 2)) then if ((3976>=439) and (v80<=((5970 -4453) -(1408 + 92)))) then if (v80<=(1094 -(461 + (2351 -(1668 + 58))))) then if (v80<=(1291 -((1619 -(512 + 114)) + 295))) then if ((3752==3752) and (v80<=(1 + 0))) then if ((4046>2695) and (v80==(1171 -(418 + 753)))) then if  not v77[v79[1 + 1 ]] then v71=v71 + 1 ;else v71=v79[1 + 2 ];end else v77[v79[1 + 1 ]]=v77[v79[1 + 2 ]][v79[10 -6 ]];end elseif (v80>(531 -((838 -432) + 123))) then local v131=v79[1771 -((6085 -4336) + 20) ];local v132=v79[1 + 3 ];local v133=v131 + 2 ;local v134={v77[v131](v77[v131 + 1 ],v77[v133])};for v237=1323 -(1249 + 73) ,v132 do v77[v133 + v237 ]=v134[v237];end local v135=v134[1];if v135 then local v285=0 + 0 ;while true do if (v285==(1145 -(466 + 679))) then v77[v133]=v135;v71=v79[6 -3 ];break;end end else v71=v71 + (2 -1) ;end else local v136=v79[1902 -(106 + 1794) ];local v137={};for v240=1 + 0 , #v76 do local v241=v76[v240];for v286=0 + 0 , #v241 do local v287=0 -0 ;local v288;local v289;local v290;while true do if ((v287==0) or (3545==3197)) then v288=v241[v286];v289=v288[1];v287=2 -(1 + 0) ;end if ((2394>373) and (v287==(115 -(4 + 110)))) then v290=v288[586 -(57 + 527) ];if ((4155<=4232) and (v289==v77) and (v290>=v136)) then v137[v290]=v289[v290];v288[1428 -(36 + 5 + 1386) ]=v137;end break;end end end end end elseif (v80<=5) then if (v80>((360 -253) -(17 + 86))) then local v138=v68[v79[3 + 0 ]];local v139;local v140={};v139=v10({},{__index=function(v242,v243) local v244=0 -0 ;local v245;while true do if (v244==(0 -0)) then v245=v140[v243];return v245[167 -(122 + 44) ][v245[2]];end end end,__newindex=function(v246,v247,v248) local v249=v140[v247];v249[1][v249[2 -0 ]]=v248;end});for v251=3 -2 ,v79[4 + 0 ] do v71=v71 + 1 + 0 ;local v252=v67[v71];if (v252[1]==52) then v140[v251-((1470 -(1269 + 200)) -0) ]={v77,v252[1260 -(1043 + 214) ]};else v140[v251-(3 -2) ]={v60,v252[7 -4 ]};end v76[ #v76 + (581 -(361 + 219)) ]=v140;end v77[v79[322 -(53 + (1093 -(802 + 24))) ]]=v29(v138,v139,v61);else local v142=v79[1 + 1 ];local v143={v77[v142](v77[v142 + (983 -(18 + 964)) ])};local v144=0 -0 ;for v254=v142,v79[4] do local v255=0 + 0 ;while true do if ((v255==(0 + (0 -0))) or (3581==3473)) then v144=v144 + (1 -0) ;v77[v254]=v143[v144];break;end end end end elseif ((4995>3348) and (v80<=(856 -(20 + 830)))) then local v145=0 + 0 ;local v146;while true do if (v145==(126 -(116 + 10))) then v146=v79[1 + 1 ];v77[v146](v13(v77,v146 + (739 -(542 + 196)) ,v72));break;end end elseif (v80>(14 -7)) then for v329=v79[1 + 1 ],v79[2 + 1 + 0 ] do v77[v329]=nil;end else local v291=v79[2];local v292={v77[v291](v77[v291 + (2 -1) ])};local v293=0 + 0 ;for v331=v291,v79[9 -5 ] do v293=v293 + (1552 -(185 + 941 + 92 + 333)) ;v77[v331]=v292[v293];end end elseif (v80<=((1159 -742) -(118 + 287))) then if ((v80<=((129 -90) -(11 + 18))) or (754>3724)) then if (v80==((460 + 670) -(118 + 1003))) then local v147=v79[5 -3 ];v77[v147]=v77[v147](v77[v147 + 1 ]);else v77[v79[379 -(142 + 235) ]][v79[3]]=v79[4];end elseif ((217>=57) and (v80>(49 -38))) then if (v77[v79[1 + 1 ]]==v79[981 -(553 + 424) ]) then v71=v71 + (1 -0) ;else v71=v79[3 + 0 ];end else local v151=v79[2];v77[v151]=v77[v151]();end elseif ((v80<=(14 + 0)) or (2070>=4037)) then if ((2705==2705) and (v80==(8 + 5))) then local v153=0 + 0 + 0 ;local v154;local v155;local v156;local v157;while true do if (v153==0) then v154=v79[2 + 0 ];v155,v156=v70(v77[v154](v77[v154 + (2 -1) ]));v153=1;end if (v153==2) then for v350=v154,v72 do local v351=0;while true do if (v351==(0 -0)) then v157=v157 + (2 -1) ;v77[v350]=v155[v157];break;end end end break;end if (v153==(1 + 0 + 0)) then v72=(v156 + v154) -((2 + 2) -3) ;v157=(2186 -(797 + 636)) -(239 + 514) ;v153=1 + 1 ;end end elseif  not v77[v79[2]] then v71=v71 + (1330 -(797 + 532)) ;else v71=v79[3];end elseif (v80<=15) then v77[v79[2 + 0 ]]=v29(v68[v79[2 + 1 ]],nil,v61);elseif ((61==61) and (v80>(37 -21))) then local v296=1202 -((1811 -1438) + 829) ;local v297;while true do if (v296==(731 -(476 + 255))) then v297=v79[1132 -(369 + 761) ];v77[v297]=v77[v297](v13(v77,v297 + 1 + 0 ,v79[5 -2 ]));break;end end elseif v77[v79[3 -1 ]] then v71=v71 + (239 -((1683 -(1427 + 192)) + 174)) ;else v71=v79[1 + 2 ];end elseif (v80<=(38 -12)) then if (v80<=(357 -(144 + 192))) then if ((v80<=(235 -(42 + 61 + 113))) or (699>=1296)) then if ((v80>(14 + 4)) or (1783>=3616)) then local v159=0 + 0 ;local v160;while true do if ((v159==(0 + 0)) or (3913>4527)) then v160=v79[2];v77[v160](v13(v77,v160 + (1505 -(363 + 1141)) ,v72));break;end end else local v161=v79[2];local v162,v163=v70(v77[v161](v77[v161 + (1581 -(1183 + 397)) ]));v72=(v163 + v161) -(2 -(2 -1)) ;local v164=0 + 0 ;for v256=v161,v72 do local v257=0 + 0 ;while true do if (v257==(1975 -(1913 + 62))) then v164=v164 + 1 + 0 + 0 ;v77[v256]=v162[v164];break;end end end end elseif (v80>20) then local v165=0 -0 ;local v166;local v167;while true do if (v165==(1933 -(565 + 1368))) then v166=v79[7 -5 ];v167=v77[v79[1664 -(1477 + 184) ]];v165=1 -0 ;end if ((4376>817) and (v165==(1 + 0))) then v77[v166 + (857 -(564 + 292)) ]=v167;v77[v166]=v167[v79[6 -2 ]];break;end end elseif (v79[5 -3 ]==v77[v79[308 -(244 + 60) ]]) then v71=v71 + 1 + 0 ;else v71=v79[479 -(41 + 435) ];end elseif ((4861>824) and (v80<=23)) then if (v80>(1023 -(938 + 63))) then v77[v79[2 + 0 ]]=v79[1128 -(936 + 86 + 103) ];else v77[v79[2]][v79[1 + 2 ]]=v77[v79[1617 -(1565 + (374 -(192 + 134))) ]];end elseif (v80<=24) then local v172=v79[1278 -(316 + 960) ];local v173=v77[v79[2 + 0 + 1 + 0 ]];v77[v172 + (1139 -(723 + 59 + 356)) ]=v173;v77[v172]=v173[v79[271 -(176 + 91) ]];elseif (v80==(65 -40)) then v60[v79[3]]=v77[v79[2 -0 ]];else v77[v79[1094 -(975 + 117) ]]={};end elseif ((v80<=(1905 -(157 + 1718))) or (1383>=2131)) then if (v80<=(23 + 5)) then if (v80==(95 -68)) then local v177=v68[v79[10 -7 ]];local v178;local v179={};v178=v10({},{__index=function(v258,v259) local v260=v179[v259];return v260[1019 -(697 + 321) ][v260[2]];end,__newindex=function(v261,v262,v263) local v264=0 -0 ;local v265;while true do if (v264==(0 -0)) then v265=v179[v262];v265[2 -1 ][v265[1 + 1 ]]=v263;break;end end end});for v266=1 -0 ,v79[10 -6 ] do v71=v71 + (1228 -(322 + 905)) ;local v267=v67[v71];if ((v267[1]==((1214 -(83 + 468)) -(602 + 9))) or (1876>=2541)) then v179[v266-(1190 -(449 + 740)) ]={v77,v267[9 -6 ]};else v179[v266-(1 + (0 -0)) ]={v60,v267[443 -(382 + 58) ]};end v76[ #v76 + 1 ]=v179;end v77[v79[2]]=v29(v177,v178,v61);elseif v77[v79[2]] then v71=v71 + 1 ;else v71=v79[9 -6 ];end elseif (v80>(25 + 4)) then v71=v79[5 -2 ];elseif (v77[v79[5 -3 ]]==v79[1209 -(902 + 303) ]) then v71=v71 + 1 ;else v71=v79[3];end elseif (v80<=32) then if (v80==(67 -36)) then local v182=v79[2];v77[v182]=v77[v182](v13(v77,v182 + 1 ,v72));else local v184=v79[4 -2 ];v77[v184]=v77[v184]();end elseif (v80<=(3 + 30)) then v77[v79[1692 -(1121 + (1575 -1006)) ]]=v79[217 -(22 + (517 -(45 + 280))) ]~=(683 -(467 + 16 + 200)) ;elseif ((1782<=3772) and (v80>(1497 -(1404 + 59)))) then local v304=0 -0 ;local v305;local v306;local v307;while true do if (((0 + 0) -0)==v304) then v305=v79[767 -(468 + 297) ];v306={v77[v305](v13(v77,v305 + (3 -2) ,v72))};v304=1;end if ((v304==(2 -1)) or (4700<813)) then v307=0 -0 ;for v378=v305,v79[2 + 2 ] do v307=v307 + 1 ;v77[v378]=v306[v307];end break;end end else v77[v79[238 -(141 + 95) ]]= not v77[v79[2 + 1 ]];end elseif (v80<=(53 + 0)) then if (v80<=(112 -68)) then if ((3199<4050) and (v80<=(93 -54))) then if (v80<=(9 + 28)) then if ((v80>36) or (4951<4430)) then v77[v79[5 -3 ]]=v79[3 + 0 ]~=0 ;else local v188=v79[2 + 0 ];v77[v188](v13(v77,v188 + (1 -0) ,v79[2 + 1 ]));end elseif ((96==96) and (v80==(201 -(92 + 71)))) then local v189=v79[1 + 1 ];local v190,v191=v70(v77[v189](v13(v77,v189 + 1 + 0 ,v79[4 -1 ])));v72=(v191 + v189) -(766 -(574 + 191)) ;local v192=0 + 0 ;for v269=v189,v72 do v192=v192 + ((3 -1) -1) ;v77[v269]=v190[v192];end else local v193=v79[2 + 0 ];v77[v193]=v77[v193](v77[v193 + (850 -(254 + 595)) ]);end elseif (v80<=(167 -(55 + 71))) then if ((v80>(52 -12)) or (2739>4008)) then if (v79[1792 -(573 + 1217) ]==v77[v79[10 -6 ]]) then v71=v71 + 1 + (1911 -(340 + 1571)) ;else v71=v79[(2 + 2) -1 ];end else local v195=939 -((2486 -(1733 + 39)) + 225) ;local v196;local v197;local v198;local v199;while true do if ((2==v195) or (23==1134)) then for v357=v196,v72 do v199=v199 + (2 -1) ;v77[v357]=v197[v199];end break;end if (0==v195) then v196=v79[2 -0 ];v197,v198=v70(v77[v196](v13(v77,v196 + 1 ,v79[3])));v195=1 + 0 ;end if ((1 -(0 -0))==v195) then v72=(v198 + v196) -(807 -(118 + 688)) ;v199=48 -(25 + 23) ;v195=1 + 1 ;end end end elseif ((v80<=(1928 -(927 + 959))) or (2693>=4111)) then v77[v79[2]]=v61[v79[3]];elseif (v80==(144 -101)) then v77[v79[734 -(16 + 716) ]][v79[5 -2 ]]=v79[101 -(11 + 86) ];else v77[v79[2]]=v60[v79[6 -3 ]];end elseif ((v80<=(333 -(175 + 110))) or (4316<=2146)) then if (v80<=(115 -69)) then if ((v80>(221 -176)) or (3546<=2809)) then v77[v79[1798 -(503 + (2327 -(125 + 909))) ]]= not v77[v79[8 -(1953 -(1096 + 852)) ]];else do return;end end elseif (v80>(34 + 6 + 7)) then local v203=v79[3];local v204=v77[v203];for v272=v203 + (1062 -(810 + 251)) ,v79[3 + (1 -0) ] do v204=v204   .. v77[v272] ;end v77[v79[1 + 1 ]]=v204;else v77[v79[2 + 0 ]]=v79[536 -(43 + 490) ];end elseif (v80<=(783 -(690 + 21 + (534 -(409 + 103))))) then if (v80==49) then v77[v79[7 -5 ]][v79[862 -(240 + 619) ]]=v77[v79[4]];else v77[v79[2]]={};end elseif (v80<=51) then local v211=v79[2];v77[v211](v13(v77,v211 + 1 + 0 ,v79[4 -1 ]));elseif ((4904>2166) and (v80>(4 + 48))) then v60[v79[1747 -(1344 + 400) ]]=v77[v79[(643 -(46 + 190)) -(255 + 150) ]];else v77[v79[2]]=v77[v79[3 + (95 -(51 + 44)) ]];end elseif ((109>=90) and (v80<=62)) then if (v80<=(31 + 26)) then if (v80<=(234 -179)) then if (v80>(174 -(34 + 86))) then v77[v79[1319 -(1114 + 203) ]]=v77[v79[1742 -(404 + 1335) ]][v79[(1136 -(228 + 498)) -(183 + 223) ]];else v77[v79[1 + 1 ]]=v61[v79[3]];end elseif ((4978>2905) and (v80==56)) then if (v77[v79[2]]~=v77[v79[4]]) then v71=v71 + (1 -0) ;else v71=v79[2 + 1 ];end else local v216=v79[1 + 1 ];local v217={v77[v216](v13(v77,v216 + 1 ,v72))};local v218=337 -(10 + (990 -(174 + 489))) ;for v273=v216,v79[3 + 1 ] do v218=v218 + (2 -1) ;v77[v273]=v217[v218];end end elseif (v80<=59) then if (v80>((2301 -(830 + 1075)) -(118 + (744 -(303 + 221))))) then local v219=v79[1 + (1270 -(231 + 1038)) ];v77[v219]=v77[v219](v13(v77,v219 + (450 -(108 + 285 + 56)) ,v72));else local v221=v79[2];v77[v221](v77[v221 + 1 + 0 ]);end elseif (v80<=(253 -193)) then local v222=v79[1495 -(711 + 782) ];v77[v222](v77[v222 + (1 -0) ]);elseif ((v80>(530 -(270 + 199))) or (3026<=2280)) then do return;end else local v319=v79[1 + 2 ];local v320=v77[v319];for v344=v319 + (1820 -((1742 -(171 + 991)) + 1239)) ,v79[4] do v320=v320   .. v77[v344] ;end v77[v79[(20 -15) -3 ]]=v320;end elseif ((v80<=(64 + 2)) or (1653<=1108)) then if (v80<=(3 + 61)) then if (v80==(28 + 35)) then v77[v79[2]]=v77[v79[7 -4 ]];else v77[v79[2]]=v60[v79[3]];end elseif (v80==(169 -104)) then local v227=v79[2];local v228={};for v276=1 + 0 , #v76 do local v277=1167 -(645 + 522) ;local v278;while true do if (v277==(1790 -(1010 + 780))) then v278=v76[v276];for v370=0, #v278 do local v371=v278[v370];local v372=v371[1];local v373=v371[2 + 0 ];if ((v372==v77) and (v373>=v227)) then v228[v373]=v372[v373];v371[4 -3 ]=v228;end end break;end end end else for v279=v79[5 -(7 -4) ],v79[1839 -(1045 + 791) ] do v77[v279]=nil;end end elseif (v80<=(171 -103)) then if ((2909>2609) and (v80>(101 -34))) then v71=v79[508 -(351 + 154) ];else local v230=1574 -(1281 + 293) ;local v231;while true do if ((757>194) and (v230==0)) then v231=v79[2];v77[v231]=v77[v231](v13(v77,v231 + (267 -(28 + 191 + 47)) ,v79[6 -3 ]));break;end end end elseif (v80<=69) then local v232=v79[1561 -(1381 + 178) ];local v233=v79[(13 -9) + 0 ];local v234=v232 + 2 + 0 ;local v235={v77[v232](v77[v232 + (3 -2) ],v77[v234])};for v281=1 + (0 -0) ,v233 do v77[v234 + v281 ]=v235[v281];end local v236=v235[471 -(381 + 89) ];if v236 then v77[v234]=v236;v71=v79[3 + 0 ];else v71=v71 + 1 + 0 ;end elseif (v80>(119 -49)) then if (v77[v79[2]]~=v77[v79[1160 -((1730 -656) + 82) ]]) then v71=v71 + (1 -0) ;else v71=v79[1787 -(214 + 1570) ];end else v77[v79[1457 -(990 + 465) ]]=v29(v68[v79[9 -6 ]],nil,v61);end v71=v71 + 1 + 0 ;end end;end return v29(v28(),{},v17)(...);end return v15("LOL!513Q0003053Q007063612Q6C028Q0003053Q00652Q726F7203163Q00E697A0E6B395E58AA0E82QBD4F72696F6E4C69623A20030A3Q004D616B6557696E646F7703043Q004E616D6503093Q00E5AE87E5AE9AE588B6030B3Q00486964655072656D69756D0100030A3Q0053617665436F6E6669672Q01030C3Q00436F6E666967466F6C646572030A3Q0041544D436F6E74726F6C03073Q004D616B6554616203063Q00E585ACE5918A03043Q0049636F6E03173Q00726278612Q73657469643A2Q2F2Q34382Q3334352Q3938030B3Q005072656D69756D4F6E6C7903083Q00412Q644C6162656C03113Q00E682A8E79A84E6B3A8E585A5E599A83A2003103Q006964656E746966796578656375746F7203063Q00E69CAAE79FA503113Q00E682A8E79A84E794A8E688B7E5908D3A2003043Q0067616D6503073Q00506C6179657273030B3Q004C6F63616C506C6179657203143Q00E682A8E79A84E698BEE7A4BAE5908DE7A7B03A20030B3Q00446973706C61794E616D6503193Q00E682A8E5BD93E5898DE69C8DE58AA1E599A8E79A8449443A2003083Q00746F737472696E6703053Q004A6F62496403103Q00E682A8E79A84E794A8E688B749443A2003063Q00557365724964031D3Q00E682A8E5BD93E5898DE69C8DE58AA1E599A8E79A84E5908DE7A7B03A20030A3Q004765745365727669636503123Q004D61726B6574706C61636553657276696365030E3Q0047657450726F64756374496E666F03073Q00506C616365496403133Q00E88EB7E58F96E5AEA2E688B7E7ABAF49443A2003133Q00526278416E616C797469637353657276696365030B3Q00476574436C69656E74496403063Q00E4BCA0E9808103093Q00436861726163746572030E3Q00436861726163746572412Q64656403043Q005761697403073Q00566563746F72332Q033Q006E6577024Q006F849040023Q00E078D42140023Q00C0136C75C0024Q0061569940023Q00C0E95D1940023Q00C087B183C0024Q00BF619A40024Q0065223240024Q00079186C003093Q00412Q6442752Q746F6E030F3Q00E4BCA0E98081E588B0E993B6E8A18C03083Q0043612Q6C6261636B03123Q00E4BCA0E98081E588B0E6ADA6E599A8E5BA9703123Q00E4BCA0E98081E588B0E78F8DE5AE9DE5BA9703153Q00E5AE87E78BACE5AEB6E5BC80E4BF9DE999A9E69F9C030C3Q00E7A9BFE5A299E58A9FE883BD03173Q00E7A9BFE5A299E78AB6E680813A20E5B7B2E69A82E5819C030E3Q00E7A9BFE5A29920E5BC802FE585B3030C3Q00E88C83E59BB4E8AEBEE7BDAE03023Q005F4703083Q004865616453697A65026Q002E4003083Q0044697361626C6564030A3Q00412Q6454657874626F7803123Q00E8BE93E585A5E88C83E59BB4E5A4A7E5B08F03073Q0044656661756C7403023Q003135030D3Q0054657874446973612Q7065617203093Q00412Q64546F2Q676C6503193Q00E590AFE794A82FE7A681E794A8E88C83E59BB4E4BFAEE694B9030A3Q0052756E53657276696365030D3Q0052656E6465725374652Q70656403073Q00436F2Q6E65637403043Q00496E697400EC3Q00122A000100013Q00061B00023Q000100012Q00348Q000400010002000200060E0001001A000100010004443Q001A0001001217000300024Q0008000400043Q00261D00030008000100020004443Q00080001001217000400023Q00261D0004000B000100020004443Q000B0001001217000500023Q00261D0005000E000100020004443Q000E000100122A000600033Q001217000700044Q003F000800024Q00300007000700082Q003A0006000200012Q002D3Q00013Q0004443Q000E00010004443Q000B00010004443Q001A00010004443Q0008000100201800033Q00052Q001A00053Q000400302B00050006000700302B00050008000900302B0005000A000B00302B0005000C000D2Q004300030005000200201800040003000E2Q001A00063Q000300302B00060006000F00302B00060010001100302B0006001200092Q0043000400060002002018000500040013001217000700143Q00122A000800153Q0006100008003000013Q0004443Q0030000100122A000800154Q000B00080001000200060E00080031000100010004443Q00310001001217000800164Q00300007000700082Q0033000500070001002018000500040013001217000700173Q00122A000800183Q00200100080008001900200100080008001A0020010008000800062Q00300007000700082Q00330005000700010020180005000400130012170007001B3Q00122A000800183Q00200100080008001900200100080008001A00200100080008001C2Q00300007000700082Q00330005000700010020180005000400130012170007001D3Q00122A0008001E3Q00122A000900183Q00200100090009001F2Q00270008000200022Q00300007000700082Q0033000500070001002018000500040013001217000700203Q00122A0008001E3Q00122A000900183Q00200100090009001900200100090009001A0020010009000900212Q00270008000200022Q00300007000700082Q0033000500070001002018000500040013001217000700223Q00122A000800183Q002018000800080023001217000A00244Q00430008000A000200201800080008002500122A000A00183Q002001000A000A00262Q00430008000A00020020010008000800062Q00300007000700082Q0033000500070001002018000500040013001217000700273Q00122A000800183Q002018000800080023001217000A00284Q00430008000A00020020180008000800292Q00270008000200022Q00300007000700082Q003300050007000100201800050003000E2Q001A00073Q000300302B00070006002A00302B00070010001100302B0007001200092Q004300050007000200122A000600183Q00200100060006001900200100060006001A00200100070006002B00060E0007007B000100010004443Q007B000100200100070006002C00201800070007002D2Q002700070002000200122A0008002E3Q00200100080008002F001217000900303Q001217000A00313Q001217000B00324Q00430008000B000200122A0009002E3Q00200100090009002F001217000A00333Q001217000B00343Q001217000C00354Q00430009000C000200122A000A002E3Q002001000A000A002F001217000B00363Q001217000C00373Q001217000D00384Q0043000A000D0002002018000B000500392Q001A000D3Q000200302B000D0006003A00061B000E0001000100032Q00343Q00074Q00343Q00084Q00347Q001016000D003B000E2Q0033000B000D0001002018000B000500392Q001A000D3Q000200302B000D0006003C00061B000E0002000100032Q00343Q00074Q00343Q00094Q00347Q001016000D003B000E2Q0033000B000D0001002018000B000500392Q001A000D3Q000200302B000D0006003D00061B000E0003000100032Q00343Q00074Q00343Q000A4Q00347Q001016000D003B000E2Q0033000B000D0001002018000B000500392Q001A000D3Q000200302B000D0006003E00061B000E0004000100012Q00347Q001016000D003B000E2Q0033000B000D0001002018000B0003000E2Q001A000D3Q000300302B000D0006003F00302B000D0010001100302B000D001200092Q0043000B000D00022Q0025000C6Q0008000D000D3Q002018000E000B0013001217001000404Q0043000E00100002002018000F000B00392Q001A00113Q000200302B00110006004100061B00120005000100052Q00343Q000C4Q00348Q00343Q000D4Q00343Q00064Q00343Q000E3Q0010160011003B00122Q0033000F00110001002018000F0003000E2Q001A00113Q000300302B00110006004200302B00110010001100302B0011001200092Q0043000F0011000200122A001000433Q00302B00100044004500122A001000433Q00302B00100046000B0020180010000F00472Q001A00123Q000400302B00120006004800302B00120049004A00302B0012004B000B00061B00130006000100012Q00347Q0010160012003B00132Q00330010001200010020180010000F004C2Q001A00123Q000300302B00120006004D00302B00120049000900020F001300073Q0010160012003B00132Q003300100012000100122A001000183Q0020180010001000230012170012004E4Q004300100012000200200100100010004F00201800100010005000061B00120008000100012Q00343Q00064Q003300100012000100201800103Q00512Q003A0010000200012Q00418Q002D3Q00013Q00093Q00043Q00030A3Q006C6F6164737472696E6703043Q0067616D6503073Q00482Q7470476574033D3Q00682Q7470733A2Q2F7261772E67697468756275736572636F6E74656E742E636F6D2F73686C6578776172652F4F72696F6E2F6D61696E2F736F7572636500093Q00122A3Q00013Q00122A000100023Q002018000100010003001217000300044Q0026000100034Q003B5Q00022Q000B3Q000100022Q00358Q002D3Q00017Q000D3Q00028Q0003143Q005365745072696D61727950617274434672616D6503063Q00434672616D652Q033Q006E657703103Q004D616B654E6F74696669636174696F6E03043Q004E616D65030C3Q00E68890E58A9FE4BCA0E9808103073Q00436F6E74656E74031B3Q00E4BDA0E5B7B2E8A2ABE4BCA0E98081E588B0E993B6E8A18CE3808203053Q00496D61676503173Q00726278612Q73657469643A2Q2F2Q34382Q3334352Q393803043Q0054696D65026Q001440001B3Q0012173Q00014Q0008000100013Q00261D3Q0002000100010004443Q00020001001217000100013Q00261D00010005000100010004443Q000500012Q002C00025Q00201800020002000200122A000400033Q0020010004000400042Q002C000500014Q000D000400054Q000600023Q00012Q002C000200023Q0020180002000200052Q001A00043Q000400302B00040006000700302B00040008000900302B0004000A000B00302B0004000C000D2Q00330002000400010004443Q001A00010004443Q000500010004443Q001A00010004443Q000200012Q002D3Q00017Q000D3Q00028Q0003143Q005365745072696D61727950617274434672616D6503063Q00434672616D652Q033Q006E657703103Q004D616B654E6F74696669636174696F6E03043Q004E616D65030C3Q00E68890E58A9FE4BCA0E9808103073Q00436F6E74656E74031E3Q00E4BDA0E5B7B2E8A2ABE4BCA0E98081E588B0E6ADA6E599A8E5BA97E3808203053Q00496D61676503173Q00726278612Q73657469643A2Q2F2Q34382Q3334352Q393803043Q0054696D65026Q001440001B3Q0012173Q00014Q0008000100013Q00261D3Q0002000100010004443Q00020001001217000100013Q00261D00010005000100010004443Q000500012Q002C00025Q00201800020002000200122A000400033Q0020010004000400042Q002C000500014Q000D000400054Q000600023Q00012Q002C000200023Q0020180002000200052Q001A00043Q000400302B00040006000700302B00040008000900302B0004000A000B00302B0004000C000D2Q00330002000400010004443Q001A00010004443Q000500010004443Q001A00010004443Q000200012Q002D3Q00017Q000D3Q00028Q0003143Q005365745072696D61727950617274434672616D6503063Q00434672616D652Q033Q006E657703103Q004D616B654E6F74696669636174696F6E03043Q004E616D65030C3Q00E68890E58A9FE4BCA0E9808103073Q00436F6E74656E74031E3Q00E4BDA0E5B7B2E8A2ABE4BCA0E98081E588B0E78F8DE5AE9DE5BA97E3808203053Q00496D61676503173Q00726278612Q73657469643A2Q2F2Q34382Q3334352Q393803043Q0054696D65026Q00144000153Q0012173Q00013Q00261D3Q0001000100010004443Q000100012Q002C00015Q00201800010001000200122A000300033Q0020010003000300042Q002C000400014Q000D000300044Q000600013Q00012Q002C000100023Q0020180001000100052Q001A00033Q000400302B00030006000700302B00030008000900302B0003000A000B00302B0003000C000D2Q00330001000300010004443Q001400010004443Q000100012Q002D3Q00017Q001F3Q00028Q00026Q00F03F03093Q00776F726B7370616365030F3Q0044657363656E64616E74412Q64656403073Q00436F2Q6E65637403103Q004D616B654E6F74696669636174696F6E03043Q004E616D65031E3Q0050726F78696D69747950726F6D7074E9858DE7BDAEE5B7B2E590AFE794A803073Q00436F6E74656E74031B3Q00E4BF9DE999A9E69F9CE5B7B2E8A7A3E99481E9858DE7BDAEE3808203053Q00496D61676503173Q00726278612Q73657469643A2Q2F2Q34382Q3334352Q393803043Q0054696D65026Q00144003053Q007061697273030E3Q0047657444657363656E64616E74732Q033Q00497341030F3Q0050726F78696D69747950726F6D7074027Q004003053Q007461626C6503063Q00696E7365727403133Q0052657175697265734C696E654F6653696768740100030B3Q004578636C7573697669747903043Q00456E756D031A3Q0050726F78696D69747950726F6D70744578636C75736976697479030A3Q00416C7761797353686F77030C3Q00486F6C644475726174696F6E03153Q004D617841637469766174696F6E44697374616E636503043Q006D61746803043Q006875676500403Q0012173Q00014Q0008000100013Q000E290002001300013Q0004443Q0013000100122A000200033Q00200100020002000400201800020002000500061B00043Q000100012Q00343Q00014Q00330002000400012Q002C00025Q0020180002000200062Q001A00043Q000400302B00040007000800302B00040009000A00302B0004000B000C00302B0004000D000E2Q00330002000400010004443Q003F000100261D3Q0002000100010004443Q000200012Q001A00026Q003F000100023Q00122A0002000F3Q00122A000300033Q0020180003000300102Q000D000300044Q002300023Q00040004443Q003B0001002018000700060011001217000900124Q00430007000900020006100007003B00013Q0004443Q003B0001001217000700013Q00261D0007002B000100130004443Q002B000100122A000800143Q0020010008000800152Q003F000900014Q003F000A00064Q00330008000A00010004443Q003B0001000E2900020033000100070004443Q0033000100302B00060016001700122A000800193Q00200100080008001A00200100080008001B001016000600180008001217000700133Q00261D00070023000100010004443Q0023000100302B0006001C000100122A0008001E3Q00200100080008001F0010160006001D0008001217000700023Q0004443Q002300010006030002001D000100020004443Q001D00010012173Q00023Q0004443Q000200012Q002D3Q00013Q00013Q00113Q002Q033Q00497341030F3Q0050726F78696D69747950726F6D7074028Q00027Q004003053Q007461626C6503063Q00696E73657274026Q00F03F03133Q0052657175697265734C696E654F6653696768740100030B3Q004578636C7573697669747903043Q00456E756D031A3Q0050726F78696D69747950726F6D70744578636C75736976697479030A3Q00416C7761797353686F77030C3Q00486F6C644475726174696F6E03153Q004D617841637469766174696F6E44697374616E636503043Q006D61746803043Q0068756765011F3Q00201800013Q0001001217000300024Q00430001000300020006100001001E00013Q0004443Q001E0001001217000100033Q00261D0001000E000100040004443Q000E000100122A000200053Q0020010002000200062Q002C00036Q003F00046Q00330002000400010004443Q001E000100261D00010016000100070004443Q0016000100302B3Q0008000900122A0002000B3Q00200100020002000C00200100020002000D0010163Q000A0002001217000100043Q00261D00010006000100030004443Q0006000100302B3Q000E000300122A000200103Q0020010002000200110010163Q000F0002001217000100073Q0004443Q000600012Q002D3Q00017Q001D3Q00028Q00026Q00F03F03103Q004D616B654E6F74696669636174696F6E03043Q004E616D6503153Q00E7A9BFE5A299E58A9FE883BDE5B7B2E590AFE794A803073Q00436F6E74656E7403183Q00E4BDA0E78EB0E59CA8E58FAFE4BBA5E7A9BFE5A299E3808203053Q00496D61676503173Q00726278612Q73657469643A2Q2F2Q34382Q3334352Q393803043Q0054696D65026Q00144003043Q0067616D65030A3Q0047657453657276696365030A3Q0052756E5365727669636503073Q005374652Q70656403073Q00436F2Q6E6563742Q033Q0053657403173Q00E7A9BFE5A299E78AB6E680813A20E5B7B2E5BC80E590AF03173Q00E7A9BFE5A299E78AB6E680813A20E5B7B2E69A82E5819C03153Q00E7A9BFE5A299E58A9FE883BDE5B7B2E7A681E794A803183Q00E7A9BFE5A299E58A9FE883BDE5B7B2E585B3E997ADE38082030A3Q00446973636F2Q6E65637403053Q00706169727303093Q00436861726163746572030E3Q0047657444657363656E64616E74732Q033Q0049734103083Q004261736550617274030A3Q0043616E436F2Q6C6964652Q0100543Q0012173Q00013Q00261D3Q0001000100010004443Q000100012Q002C00016Q0022000100014Q003500016Q002C00015Q0006100001002800013Q0004443Q00280001001217000100013Q00261D00010015000100020004443Q001500012Q002C000200013Q0020180002000200032Q001A00043Q000400302B00040004000500302B00040006000700302B00040008000900302B0004000A000B2Q00330002000400010004443Q0053000100261D0001000A000100010004443Q000A000100122A0002000C3Q00201800020002000D0012170004000E4Q004300020004000200200100020002000F00201800020002001000061B00043Q000100012Q00403Q00034Q00430002000400022Q0035000200024Q002C000200043Q002018000200020011001217000400124Q0033000200040001001217000100023Q0004443Q000A00010004443Q00530001001217000100013Q00261D00010038000100020004443Q003800012Q002C000200043Q002018000200020011001217000400134Q00330002000400012Q002C000200013Q0020180002000200032Q001A00043Q000400302B00040004001400302B00040006001500302B00040008000900302B0004000A000B2Q00330002000400010004443Q0053000100261D00010029000100010004443Q002900012Q002C000200023Q0006100002004000013Q0004443Q004000012Q002C000200023Q0020180002000200162Q003A00020002000100122A000200174Q002C000300033Q0020010003000300180020180003000300192Q000D000300044Q002300023Q00040004443Q004D000100201800070006001A0012170009001B4Q00430007000900020006100007004D00013Q0004443Q004D000100302B0006001C001D00060300020047000100020004443Q00470001001217000100023Q0004443Q002900010004443Q005300010004443Q000100012Q002D3Q00013Q00013Q00073Q0003053Q00706169727303093Q00436861726163746572030E3Q0047657444657363656E64616E74732Q033Q0049734103083Q004261736550617274030A3Q0043616E436F2Q6C696465012Q00133Q00122A3Q00014Q002C00015Q0020010001000100020020180001000100032Q000D000100024Q00235Q00020004443Q00100001002018000500040004001217000700054Q00430005000700020006100005001000013Q0004443Q001000010020010005000400060006100005001000013Q0004443Q0010000100302B0004000600070006033Q0007000100020004443Q000700012Q002D3Q00017Q000F3Q00028Q0003083Q00746F6E756D62657203023Q005F4703083Q004865616453697A6503103Q004D616B654E6F74696669636174696F6E03043Q004E616D6503153Q00E88C83E59BB4E5A4A7E5B08FE5B7B2E8AEBEE7BDAE03073Q00436F6E74656E7403143Q00E5BD93E5898DE88C83E59BB4E5A4A7E5B08F3A2003053Q00496D61676503173Q00726278612Q73657469643A2Q2F2Q34382Q3334352Q393803043Q0054696D65026Q001440030C3Q00E8BE93E585A5E697A0E69588031B3Q00E8AFB7E8BE93E585A5E69C89E69588E79A84E695B0E5AD97E3808201283Q001217000100014Q0008000200023Q000E2900010002000100010004443Q0002000100122A000300024Q003F00046Q00270003000200022Q003F000200033Q0006100002001D00013Q0004443Q001D0001001217000300013Q00261D0003000B000100010004443Q000B000100122A000400033Q0010160004000400022Q002C00045Q0020180004000400052Q001A00063Q000400302B000600060007001217000700094Q003F00086Q003000070007000800101600060008000700302B0006000A000B00302B0006000C000D2Q00330004000600010004443Q002700010004443Q000B00010004443Q002700012Q002C00035Q0020180003000300052Q001A00053Q000400302B00050006000E00302B00050008000F00302B0005000A000B00302B0005000C000D2Q00330003000500010004443Q002700010004443Q000200012Q002D3Q00017Q00023Q0003023Q005F4703083Q0044697361626C656401043Q00122A000100014Q002200025Q0010160001000200022Q002D3Q00017Q00093Q0003023Q005F4703083Q0044697361626C656403053Q00706169727303043Q0067616D65030A3Q004765745365727669636503073Q00506C6179657273030A3Q00476574506C617965727303043Q004E616D6503053Q007063612Q6C001A3Q00122A3Q00013Q0020015Q000200060E3Q0019000100010004443Q0019000100122A3Q00033Q00122A000100043Q002018000100010005001217000300064Q00430001000300020020180001000100072Q000D000100024Q00235Q00020004443Q001700010020010005000400082Q002C00065Q00200100060006000800063800050016000100060004443Q0016000100122A000500093Q00061B00063Q000100012Q00343Q00044Q003A0005000200012Q004100035Q0006033Q000D000100020004443Q000D00012Q002D3Q00013Q00013Q00143Q00028Q0003093Q00436861726163746572030E3Q0046696E6446697273744368696C6403103Q0048756D616E6F6964522Q6F7450617274027Q0040030A3Q0043616E436F2Q6C696465010003043Q0053697A6503073Q00566563746F72332Q033Q006E657703023Q005F4703083Q004865616453697A65030C3Q005472616E73706172656E6379026Q66E63F026Q00F03F030A3Q00427269636B436F6C6F72030C3Q005265612Q6C7920776869746503083Q004D6174657269616C03043Q00456E756D03043Q004E656F6E00353Q0012173Q00014Q0008000100013Q00261D3Q0002000100010004443Q000200012Q002C00025Q002001000200020002002018000200020003001217000400044Q00430002000400022Q003F000100023Q0006100001003400013Q0004443Q00340001001217000200014Q0008000300033Q00261D0002000E000100010004443Q000E0001001217000300013Q000E2900050015000100030004443Q0015000100302B0001000600070004443Q0034000100261D00030023000100010004443Q0023000100122A000400093Q00200100040004000A00122A0005000B3Q00200100050005000C00122A0006000B3Q00200100060006000C00122A0007000B3Q00200100070007000C2Q004300040007000200101600010008000400302B0001000D000E0012170003000F3Q00261D000300110001000F0004443Q0011000100122A000400103Q00200100040004000A001217000500114Q002700040002000200101600010010000400122A000400133Q002001000400040012002001000400040014001016000100120004001217000300053Q0004443Q001100010004443Q003400010004443Q000E00010004443Q003400010004443Q000200012Q002D3Q00017Q00",v9(),...);
+                                end
+                            end
+        
+                        end
+        
+                    end
+        
+        
+                end
+            end
+        
+            wait (0.1)
+            for i,v in pairs (game:GetService('Workspace').Game.Entities.ItemPickup:GetChildren()) do
+                for i,k in pairs(v:GetChildren()) do
+                    for i,l in pairs(k:GetChildren()) do
+                        if l.ClassName == 'BillboardGui' then
+                            l:Remove()
+                        end
+                    end
+                end
+            end
+        
+        end
+end
+end
+Fram:AddToggle({
+    Name = '远程黑市',
+    Default = false,
+    Callback = function(Value)
+    Dealer1 = Value
+        if Dealer1 then
+            Dealer2()
+        end
+    end    
+})
+Fram:AddButton({
+    Name = '瞬移宝藏+秒挖',
+    Default = false,
+    Callback = function(Value)
+    Debris1 = Value
+        if Debris1 then
+            Debris2()
+        end
+    end    
+})
+Debris2 = function()
+    local Debri = game:GetService('Workspace').Game.Local.Debris
+    if Debri.TreasureMarker then
+    Debri.TreasureMarker.ProximityPrompt.HoldDuration = 0
+    Debri.TreasureMarker.ProximityPrompt.MaxActivationDistance = 40
+    local epoh1 = Debri.TreasureMarker.CFrame
+    local epoh2 = game:GetService('Players')
+    local epoh3 = epoh2.LocalPlayer.Character.HumanoidRootPart
+    epoh3.CFrame = epoh1
+    else
+    OrionLib:MakeNotification({
+        Name = '提示：',
+        Content = '您未持有藏宝图！',
+        Image = 'rbxassetid://4483345998',
+        Time = 5
+    })
+    end
+end
+
+Fram:AddButton({
+    Name = '远程保险（Z）',
+    Value = false,
+    Callback = function(Value)
+    game:GetService('Players').LocalPlayer.PlayerGui.Backpack.Holder.Locker.Visible = true
+    end    
+})
+Fram:AddButton({
+    Name = '秒拿珠宝店',
+    Callback = function()
+    local rocks = game:GetService('Workspace').GemRobbery.JewelryCases.HighYieldSpawns
+    for _, obj in pairs(rocks:GetChildren()) do
+        if obj.ClassName == 'Model' then
+            for _, innerObj in pairs(obj:GetChildren()) do
+                if innerObj.ClassName == 'Model' then
+                    if innerObj.Name == 'Case' then
+                    elseif innerObj.Name == 'Emerald' then
+                        if innerObj:FindFirstChild('Handle') and innerObj.Handle:FindFirstChild('ProximityPrompt') then
+                            innerObj.Handle.ProximityPrompt.HoldDuration = 0
+                        end
+                    elseif innerObj.Name == 'Sapphire' then
+                        if innerObj:FindFirstChild('Handle') and innerObj.Handle:FindFirstChild('ProximityPrompt') then
+                            innerObj.Handle.ProximityPrompt.HoldDuration = 0
+                        end
+                    elseif innerObj.Name == 'Amethyst' then
+                        if innerObj:FindFirstChild('Handle') and innerObj.Handle:FindFirstChild('ProximityPrompt') then
+                            innerObj.Handle.ProximityPrompt.HoldDuration = 0
+                        end
+                    elseif innerObj.Name == 'Topaz' then
+                        if innerObj:FindFirstChild('Handle') and innerObj.Handle:FindFirstChild('ProximityPrompt') then
+                            innerObj.Handle.ProximityPrompt.HoldDuration = 0
+                        end                     
+                    elseif innerObj.Name == 'Diamond' then
+                        if innerObj:FindFirstChild('Handle') and innerObj.Handle:FindFirstChild('ProximityPrompt') then
+                            innerObj.Handle.ProximityPrompt.HoldDuration = 0
+                        end
+                    elseif innerObj.Name == 'Gold Bar' then
+                        if innerObj:FindFirstChild('Handle') and innerObj.Handle:FindFirstChild('ProximityPrompt') then
+                            innerObj.Handle.ProximityPrompt.HoldDuration = 0
+                        end
+                    elseif innerObj.Name == 'Ruby' then
+                        if innerObj:FindFirstChild('Handle') and innerObj.Handle:FindFirstChild('ProximityPrompt') then
+                            innerObj.Handle.ProximityPrompt.HoldDuration = 0
+                        end
+                    else
+                        if innerObj:FindFirstChild('Box') and innerObj.Box:FindFirstChild('ProximityPrompt') then
+                            innerObj.Box.ProximityPrompt.HoldDuration = 0
+                        end
+                    end
+                end
+            end
+        end
+    end
+    local rocks2 = game:GetService('Workspace').GemRobbery.JewelryCases.LowYieldSpawns
+    for _, obj in pairs(rocks2:GetChildren()) do
+        if obj.ClassName == 'Model' then
+            for _, innerObj in pairs(obj:GetChildren()) do
+                if innerObj.ClassName == 'Model' then
+                    if innerObj.Name == 'Case' then
+                    elseif innerObj.Name == 'Emerald' then
+                        if innerObj:FindFirstChild('Handle') and innerObj.Handle:FindFirstChild('ProximityPrompt') then
+                            innerObj.Handle.ProximityPrompt.HoldDuration = 0
+                        end
+                    elseif innerObj.Name == 'Sapphire' then
+                        if innerObj:FindFirstChild('Handle') and innerObj.Handle:FindFirstChild('ProximityPrompt') then
+                            innerObj.Handle.ProximityPrompt.HoldDuration = 0
+                        end
+                    elseif innerObj.Name == 'Amethyst' then
+                        if innerObj:FindFirstChild('Handle') and innerObj.Handle:FindFirstChild('ProximityPrompt') then
+                            innerObj.Handle.ProximityPrompt.HoldDuration = 0
+                        end
+                    elseif innerObj.Name == 'Topaz' then
+                        if innerObj:FindFirstChild('Handle') and innerObj.Handle:FindFirstChild('ProximityPrompt') then
+                            innerObj.Handle.ProximityPrompt.HoldDuration = 0
+                        end
+                    elseif innerObj.Name == 'Diamond' then
+                        if innerObj:FindFirstChild('Handle') and innerObj.Handle:FindFirstChild('ProximityPrompt') then
+                            innerObj.Handle.ProximityPrompt.HoldDuration = 0
+                        end
+                    elseif innerObj.Name == 'Gold Bar' then
+                        if innerObj:FindFirstChild('Handle') and innerObj.Handle:FindFirstChild('ProximityPrompt') then
+                            innerObj.Handle.ProximityPrompt.HoldDuration = 0
+                        end
+                    elseif innerObj.Name == 'Ruby' then
+                        if innerObj:FindFirstChild('Handle') and innerObj.Handle:FindFirstChild('ProximityPrompt') then
+                            innerObj.Handle.ProximityPrompt.HoldDuration = 0
+                        end
+                    else
+                        if innerObj:FindFirstChild('Box') and innerObj.Box:FindFirstChild('ProximityPrompt') then
+                            innerObj.Box.ProximityPrompt.HoldDuration = 0
+                        end
+                    end
+                end
+            end
+        end
+    end
+    end    
+})
+Dealer2 = function()
+    while Dealer1 do
+    wait(0.1)
+    game:GetService('Workspace').BlackMarket.Dealer.Dealer.ProximityPrompt.MaxActivationDistance = 100000
+    end
+    while not Dealer1 do
+    wait(0.1)
+    game:GetService('Workspace').BlackMarket.Dealer.Dealer.ProximityPrompt.MaxActivationDistance = 16
+    end
+end
+Fram:AddButton({
+    Name = '空投秒拿(Q)',
+    Callback = function()
+        wait(0.1)
+        game:GetService('Workspace').Game.Airdrops.Airdrop.Airdrop.ProximityPrompt.HoldDuration = 0
+    end    
+})
+Fram:AddButton({
+    Name = '秒开银行+微距离(E)',
+    Callback = function()
+    game:GetService('Workspace').BankRobbery.VaultDoor.Door.Attachment.ProximityPrompt.HoldDuration = 0
+    game:GetService('Workspace').BankRobbery.VaultDoor.Door.Attachment.ProximityPrompt.MaxActivationDistance = 16
+    game:GetService('Workspasce').BankRobbery.BankCash.Main.Attachment.ProximityPrompt.MaxActivationDistance = 16
+    end    
+})
+Fram:AddButton({
+    Name = '秒开金保险(R)',
+    Callback = function()
+    while true do
+        wait(0.1)
+        local safe = game:GetService('Workspace').Game.Entities.GoldJewelSafe.GoldJewelSafe
+        safe.Door['Meshes/LargeSafe_Cube.002_Cube.003_None (1)'].Attachment.ProximityPrompt.HoldDuration = 0
+        safe.Name = 'safeopen'
+    end
+    end    
+})
+Fram:AddButton({
+    Name = '秒开黑保险(T)',
+    Callback = function()
+    while true do
+        wait(0.1)
+        local safe2 = game:GetService('Workspace').Game.Entities.JewelSafe.JewelSafe
+        safe2.Door['Meshes/LargeSafe_Cube.002_Cube.003_None (1)'].Attachment.ProximityPrompt.HoldDuration = 0
+        safe2.Name = 'safeopen' 
+    end
+    end    
+})
+Cheat:AddTextbox({
+    Name = '范围',
+    Default = '',
+    TextDisappear = true,
+    Callback = function(Value)
+        _G.HeadSize = Value
+        _G.Disabled = true
+        game:GetService('RunService').RenderStepped:connect(function()
+        if _G.Disabled then
+            for i,v in next, game:GetService('Players'):GetPlayers() do
+                if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+                pcall(function()
+                    v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+                    v.Character.HumanoidRootPart.Transparency = 0.7
+                    v.Character.HumanoidRootPart.CanCollide = false
+                    end)
+                    end
+                end
+            end
+        end)
+    end   
+})
+Cheat:AddToggle({
+    Name = '残血自动逃逸',
+    Value = false,
+    Callback = function(Value)
+    paolu1 = Value
+        if paolu1 then
+            paolu2()
+        end
+    end    
+})
+paolu2 = function()
+    while paolu1 do
+    wait(0.1)
+    if game:GetService('Players').LocalPlayer.Character.Humanoid.Health <= 35 then
+        local og1 = CFrame.new(175.191, 13.937, -132.69)
+        local og3 = game:GetService('Players').LocalPlayer.Character.HumanoidRootPart
+        og3.CFrame = og1
+        wait(20)
+    end
+    end
+end
+Cheat:AddToggle({
+    Name = '最大视野',
+    Callback = function(Value)
+    Cam1 = Value
+        if Cam1 then
+            Cam2()
+        end
+    end    
+})
+Cam2 = function()
+    while Cam1 do
+    wait(0.1)
+    game:GetService('Players').LocalPlayer.CameraMaxZoomDistance = 1000
+    end
+    while not Cam1 do
+    wait(0.1)
+    game:GetService('Players').LocalPlayer.CameraMaxZoomDistance = 32
+    end
+end
+Cheat:AddButton({
+    Name = '显示聊天框',
+    Callback = function()
+    ChatSee()
+    end
+})
+ChatSee = function()
+    game:GetService('Players').LocalPlayer.PlayerGui.Chat.Frame.ChatChannelParentFrame.Visible = true
+    game:GetService('Players').LocalPlayer.PlayerGui.Chat.Frame.ChatChannelParentFrame.Position = UDim2.new(0, 0, 0, 40)
+end
+Cheat:AddButton({
+    Name = '移除障碍',
+    Callback = function()
+    game:GetService('Workspace').InviteSigns:Destroy()
+    game:GetService('Workspace').Game.Props['Trash Bag']:Destroy()
+    game:GetService('Workspace').Game.Props.Dumpster:Destroy()
+    game:GetService('Workspace').Game.Props['Traffic Cone']:Destroy()
+    game:GetService('Workspace').Game.Props['Wire Fence']:Destroy()
+    game:GetService('Workspace').Game.Props['Wood Crate']:Destroy()
+    game:GetService('Workspace').Game.Props.Hydrant:Destroy()
+    game:GetService('Workspace').Game.Props['Street Light']:Destroy()
+    game:GetService('Workspace').Game.Props['Power Line Pole']:Destroy()
+    game:GetService('Workspace').Game.Props['Wood Fence']:Destroy()
+    game:GetService('Workspace').Game.Props.BusStop:Destroy()
+    game:GetService('Workspace').Game.Props.Roadblock:Destroy()
+    game:GetService('Workspace').Game.Props.Bollard:Destroy()
+    game:GetService('Workspace').Game.Props.Light:Destroy()
+    game:GetService('Workspace').Game.Props.Roadblock:Destroy()
+    game:GetService('Workspace').Game.Props.Glass:Destroy()
+    game:GetService('Workspace').Game.Props.Bench:Destroy()
+    game:GetService('Workspace').Game.Props["Trash Bin"]:Destroy()
+    game:GetService('Workspace').Game.Props.Bollard:Destroy()
+    game:GetService('Workspace').Game.Props["Office Chair"]:Destroy()
+    game:GetService('Workspace').Game.Props.Table:Destroy()
+    game:GetService("Workspace").BankRobbery.BankWalls:Destroy()
+    game:GetService("Workspace").BankRobbery.AlarmLightModel:Destroy()
+    game:GetService("Workspace").BankRobbery.AlarmLights:Destroy()
+    end
+})
+Cheat:AddButton({
+    Name = '无皮肤枪械无后+微射速+左键连发',
+    Callback = function()
+    while true do
+    wait(1)
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('Raygun') then
+    if  game.ReplicatedStorage.Models.Items.Raygun.Handle.Muzzle:FindFirstChild('PointLight') then
+        game.ReplicatedStorage.Models.Items.Raygun.Handle.Muzzle.PointLight.Name = 'PointLight1'
+    end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('M1911') then
+        if  game.ReplicatedStorage.Models.Items.M1911.Handle.Muzzle:FindFirstChild('PointLight') then
+            game.ReplicatedStorage.Models.Items.M1911.Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('Scar L') then
+        if  game.ReplicatedStorage.Models.Items['Scar L'].Handle.Muzzle:FindFirstChild('PointLight') then
+            game.ReplicatedStorage.Models.Items['Scar L'].Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('Glock') then
+        if  game.ReplicatedStorage.Models.Items.Glock.Handle.Muzzle:FindFirstChild('PointLight') then
+        game.ReplicatedStorage.Models.Items.Glock.Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('Mossberg') then
+        if  game.ReplicatedStorage.Models.Items.Mossberg.Handle.Muzzle:FindFirstChild('PointLight') then
+            game.ReplicatedStorage.Models.Items.Mossberg.Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('RPG') then
+        if  game.ReplicatedStorage.Models.Items.RPG.Handle.Muzzle:FindFirstChild('PointLight') then
+            game.ReplicatedStorage.Models.Items.RPG.Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('USP 45') then
+        if  game.ReplicatedStorage.Models.Items['USP 45'].Handle.Muzzle:FindFirstChild('PointLight') then
+            game.ReplicatedStorage.Models.Items['USP 45'].Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('Sawn Off') then
+        if  game.ReplicatedStorage.Models.Items['Sawn Off'].Handle.Muzzle:FindFirstChild('PointLight') then
+            game.ReplicatedStorage.Models.Items['Sawn Off'].Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('Minigun') then
+        if  game.ReplicatedStorage.Models.Items.Minigun.Handle.Muzzle:FindFirstChild('PointLight') then
+            game.ReplicatedStorage.Models.Items.Minigun.Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('Stagecoach') then
+        if  game.ReplicatedStorage.Models.Items.Stagecoach.Handle.Muzzle:FindFirstChild('PointLight') then
+            game.ReplicatedStorage.Models.Items.Stagecoach.Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('Deagle') then
+        if  game.ReplicatedStorage.Models.Items.Deagle.Handle.Muzzle:FindFirstChild('PointLight') then
+            game.ReplicatedStorage.Models.Items.Deagle.Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('RPK') then
+        if  game.ReplicatedStorage.Models.Items.RPK.Handle.Muzzle:FindFirstChild('PointLight') then
+            game.ReplicatedStorage.Models.Items.RPK.Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('Glock 18') then
+        if  game.ReplicatedStorage.Models.Items['Glock 18'].Handle.Muzzle:FindFirstChild('PointLight') then
+            game.ReplicatedStorage.Models.Items['Glock 18'].Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('AK-47') then
+        if  game.ReplicatedStorage.Models.Items['AK-47'].Handle.Muzzle:FindFirstChild('PointLight') then
+            game.ReplicatedStorage.Models.Items['AK-47'].Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('Tommy Gun') then
+        if  game.ReplicatedStorage.Models.Items['Tommy Gun'].Handle.Muzzle:FindFirstChild('PointLight') then
+            game.ReplicatedStorage.Models.Items['Tommy Gun'].Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('M4A1') then
+        if  game.ReplicatedStorage.Models.Items.M4A1.Handle.Muzzle:FindFirstChild('PointLight') then
+            game.ReplicatedStorage.Models.Items.M4A1.Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('Uzi') then
+        if  game.ReplicatedStorage.Models.Items.Uzi.Handle.Muzzle:FindFirstChild('PointLight') then
+            game.ReplicatedStorage.Models.Items.Uzi.Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('MP7') then
+        if  game.ReplicatedStorage.Models.Items.MP7.Handle.Muzzle:FindFirstChild('PointLight') then
+        game.ReplicatedStorage.Models.Items.MP7.Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('AUG') then
+        if  game.ReplicatedStorage.Models.Items.AUG.Handle.Muzzle:FindFirstChild('PointLight') then
+        game.ReplicatedStorage.Models.Items.AUG.Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    if game.ReplicatedStorage.Models.Items:FindFirstChild('Python') then
+        if  game.ReplicatedStorage.Models.Items.Python.Handle.Muzzle:FindFirstChild('PointLight') then
+            game.ReplicatedStorage.Models.Items.Python.Handle.Muzzle.PointLight.Name = 'PointLight1'
+        end
+    end
+    end
+    end    
+})
+Cheat:AddButton({
+    Name = '透视物品',
+    Callback = function()
+        while true do
+            for i,l in pairs(game:GetService('Workspace').Game.Entities.ItemPickup:GetChildren()) do
+                for i,v in pairs(l:GetChildren()) do
+                    if v.ClassName == 'MeshPart' or 'Part' then
+                        for i,e in pairs(v:GetChildren()) do
+                            if e.ClassName == 'ProximityPrompt' then
+                                if e.ObjectText == 'Military Armory Keycard' or e.ObjectText == 'Sawn Off' or e.ObjectText == 'Scar L' or e.ObjectText == 'Military Vest' or e.ObjectText == 'Raygun' or e.ObjectText == 'UPS 45' or e.ObjectText == 'Medium Vest' or e.ObjectText == 'Deagle' or e.ObjectText == 'Glock 18' or e.ObjectText == 'Heavy Vest' or e.ObjectText == 'Diamond Ring' or e.ObjectText == 'AS Val' or e.ObjectText == 'Money Printer' or e.ObjectText == 'Aug' or e.ObjectText == 'M4A1' or e.ObjectText == 'C4' or e.ObjectText == 'Stagecoach' or e.ObjectText == 'Diamond' or e.ObjectText == 'Void Gem' or e.ObjectText == 'Dark Matter Gem' or e.ObjectText == 'Gold AK-47' or e.ObjectText == 'Barrett M107' or e.ObjectText == 'Gold Deagle' or e.ObjectText == 'Double Barrel' or e.ObjectText == 'Dragunov' or e.ObjectText == 'RPK'  or e.ObjectText == 'M249 SAW' or e.ObjectText == 'Flamethrower' or e.ObjectText == 'Police Armory Keycard' or e.ObjectText == 'RPG' or e.ObjectText == 'Saiga 12' or e.ObjectText == 'Ammo Box' then
+                                    xd = Instance.new('BillboardGui')
+                                    xd.Parent = v
+                                    xd.AlwaysOnTop = true
+                                    xd.Size = UDim2.new(0, 100, 0, 25)
+                                    Frame = Instance.new('Frame')
+                                    Frame.Parent = xd
+                                    Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+                                    Frame.Size = UDim2.new(1, 0, 1, 0)
+                                    Frame.BackgroundTransparency = 1
+                                    text = Instance.new('TextLabel')
+                                    text.TextScaled = true
+                                    text.BackgroundColor3 = Color3.new(255, 0, 0)
+                                    text.Parent = Frame
+                                    text.Text = e.ObjectText
+                                    text.Size = UDim2.new(1, 0, 1, 0)
+                                    text.BackgroundTransparency = 1
+                                    text.TextColor3 = Color3.new(1, 1, 1)
+                                else
+
+                                end
+                            end
+        
+                        end
+        
+                    end
+        
+        
+                end
+            end
+            wait()
+            for i,v in pairs (game:GetService('Workspace').Game.Entities.ItemPickup:GetChildren()) do
+                for i,k in pairs(v:GetChildren()) do
+                    for i,l in pairs(k:GetChildren()) do
+                        if l.ClassName == 'BillboardGui' then
+                            l:Remove()
+                        end
+                    end
+                end
+            end
+        
+        end
+    end    
+})
+Cheat:AddButton({
+    Name = '绘制零件',
+    Callback = function()
+        while true do
+            for i,l in pairs(game:GetService('Workspace').Game.Entities.ItemPickup:GetChildren()) do
+                for i,v in pairs(l:GetChildren()) do
+                    if v.ClassName == 'MeshPart' or 'Part' then
+                        for i,e in pairs(v:GetChildren()) do
+                            if e.ClassName == 'ProximityPrompt' then
+                                if e.ObjectText == 'Medical Supplies' or e.ObjectText == 'Weapon components' or e.ObjectText == 'Explosives' or e.ObjectText == 'Weapon Parts' or e.ObjectText == 'Scrap' then
+                                    xd = Instance.new('BillboardGui')
+                                    xd.Parent = v
+                                    xd.AlwaysOnTop = true
+                                    xd.Size = UDim2.new(0, 100, 0, 25)
+                                    Frame = Instance.new('Frame')
+                                    Frame.Parent = xd
+                                    Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+                                    Frame.Size = UDim2.new(1, 0, 1, 0)
+                                    Frame.BackgroundTransparency = 1
+                                    text = Instance.new('TextLabel')
+                                    text.TextScaled = true
+                                    text.BackgroundColor3 = Color3.new(255, 0, 0)
+                                    text.Parent = Frame
+                                    text.Text = e.ObjectText
+                                    text.Size = UDim2.new(1, 0, 1, 0)
+                                    text.BackgroundTransparency = 1
+                                    text.TextColor3 = Color3.new(1, 1, 1)
+                                else
+
+                                end
+                            end
+        
+                        end
+        
+                    end
+        
+        
+                end
+            end
+            wait()
+            for i,v in pairs (game:GetService('Workspace').Game.Entities.ItemPickup:GetChildren()) do
+                for i,k in pairs(v:GetChildren()) do
+                    for i,l in pairs(k:GetChildren()) do
+                        if l.ClassName == 'BillboardGui' then
+                            l:Remove()
+                        end
+                    end
+                end
+            end
+        
+        end
+    end    
+})
+Cheat:AddButton({
+    Name = '秒填弹药箱',
+    Callback = function()
+    for i = 1 , 50 do
+    local ammobx = game:GetService('Workspace').Game.Local.droppables['Ammo Box']
+    ammobx.Handle.ProximityPrompt.HoldDuration = 0
+    ammobx.Name = 'ammoopen'
+    end
+    end    
+})
+    elseif Value == 'DEX' then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/infyiff/backup/main/dex.lua'))()
+    elseif Value == '吸人' then
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+
+local plrs = game:GetService('Players')
+local lp = plrs.LocalPlayer
+local mouse = lp:GetMouse()
+local ws = game:GetService('Workspace')
+local cg = game:GetService('CoreGui')
+local pg = lp:FindFirstChildOfClass('PlayerGui')
+local rs = game:GetService('RunService')
+local uis = game:GetService('UserInputService')
+local stepped = rs.Stepped
+local renderstepped = rs.RenderStepped
+local heartbeat = rs.Heartbeat
+local guiname = tostring((game.PlaceId - lp.UserId) / 2)
+local currentplayer = lp
+local shp = sethiddenproperty or set_hidden_property or sethiddenprop or set_hidden_prop
+local ssr = setsimulationradius or setsimradius or set_simulation_radius
+local v3 = Vector3.new
+local v3_0 = v3(0, 0, 0)
+local cf = CFrame.new
+local flycf = false
+
+local function gp(parent, name, className)
+    local ret = nil
+    pcall(function()
+        for i, v in pairs(parent:GetChildren()) do
+            if (v.Name == name) and v:IsA(className) then
+                ret = v
+                break
+            end
+        end
+    end)
+    return ret
+end
+
+local gui = gp(cg, guiname, 'ScreenGui') or gp(pg, guiname, 'ScreenGui')
+if gui then
+    gui:Destroy()
+end
+
+gui = Instance.new('ScreenGui')
+gui.Name = guiname
+gui.ResetOnSpawn = false
+gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+gui.Enabled = false
+gui.IgnoreGuiInset = true
+pcall(function()
+    gui.Parent = cg
+end)
+if gui.Parent ~= cg then
+    gui.Parent = pg
+end
+gui:GetPropertyChangedSignal('Parent'):Connect(function()
+    if not (gui and gui.Parent) then
+        gui = false
+    end
+end)
+local mainFrame = Instance.new('Frame')
+mainFrame.Name = 'mainFrame'
+mainFrame.Parent = gui
+mainFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+mainFrame.BorderSizePixel = 0
+mainFrame.Position = UDim2.new(0, 0, 1, -200)
+mainFrame.Size = UDim2.new(0.485, 0, 0, 200)
+local mf = Instance.new('Frame')
+mf.Name = 'mf'
+mf.Parent = mainFrame
+mf.BackgroundColor3 = mainFrame.BackgroundColor3
+mf.BorderSizePixel = 0
+mf.Position = UDim2.new(0, 0, 1, 0)
+mf.Size = UDim2.new(1, 0, 1, 0)
+local scriptName = Instance.new('TextLabel')
+scriptName.Name = 'scriptName'
+scriptName.Parent = mainFrame
+scriptName.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+scriptName.BackgroundTransparency = 1.000
+scriptName.BorderSizePixel = 0
+scriptName.Size = UDim2.new(1, 0, 0, 20)
+scriptName.Font = Enum.Font.SourceSans
+scriptName.Text = 'SKIN:YF|MAKE:Charlie'
+scriptName.TextColor3 = Color3.fromRGB(223, 223, 223)
+scriptName.TextSize = 20.000
+scriptName.TextWrapped = true
+local line = Instance.new('Frame')
+line.Name = 'line'
+line.Parent = scriptName
+line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+line.BackgroundTransparency = 0.700
+line.BorderSizePixel = 0
+line.Position = UDim2.new(0, 5, 1, 0)
+line.Size = UDim2.new(1, -10, 0, 1)
+local showhide = Instance.new('TextButton')
+showhide.Name = 'showhide'
+showhide.Parent = mainFrame
+showhide.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+showhide.BorderSizePixel = 0
+showhide.Position = UDim2.new(0.5, -25, 0, -30)
+showhide.Size = UDim2.new(0, 50, 0, 30)
+showhide.Font = Enum.Font.SourceSans
+showhide.Text = '收起'
+showhide.TextColor3 = Color3.fromRGB(255, 255, 255)
+showhide.TextSize = 20.000
+local scrollingFrame = Instance.new('ScrollingFrame')
+scrollingFrame.Name = 'scrollingFrame'
+scrollingFrame.Parent = mainFrame
+scrollingFrame.Active = true
+scrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+scrollingFrame.BackgroundTransparency = 1.000
+scrollingFrame.BorderSizePixel = 0
+scrollingFrame.ClipsDescendants = false
+scrollingFrame.Position = UDim2.new(0, 5, 0, 30)
+scrollingFrame.Size = UDim2.new(1, -10, 1, -35)
+scrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+scrollingFrame.ScrollBarThickness = 10
+scrollingFrame.AutomaticCanvasSize = Enum.AutomaticSize.X
+local UIListLayout = Instance.new('UIListLayout')
+UIListLayout.Parent = scrollingFrame
+UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 10)
+
+local event = Instance.new('BindableEvent', gui)
+local fps = 60
+fps = 1 / fps
+local tf = 0
+local con = nil
+con = renderstepped:Connect(function(s)
+    if not gui then
+        con:Disconnect()
+        return
+    end
+    tf += s
+    if tf >= fps then
+        for i=1, math.floor(tf / fps) do
+            event:Fire(true)
+        end
+        tf = 0
+    end
+end)
+local event = event.Event
+
+local sn = scriptName.Text
+local function notify(msg)
+    spawn(function()
+        local msg1 = sn .. ' - ' .. msg
+        scriptName.Text = msg1
+        wait(3)
+        if scriptName.Text == msg1 then
+            scriptName.Text = sn
+        end
+    end)
+end
+
+if gui.Parent == pg then
+    notify('gui in playerGui')
+end
+
+local ancprt = nil
+local function weldtp(part, cfr)
+    if not (part and part.Parent and part:IsA('BasePart') and (not part:IsGrounded())) then
+        return nil
+    end
+    if not (ancprt and ancprt.Parent and ancprt:IsA('BasePart') and ancprt:IsGrounded() and ancprt:IsDescendantOf(ws)) then
+        for i, v in pairs(ws:GetDescendants()) do
+            if v and v.Parent and v:IsA('BasePart') and v:IsGrounded() then
+                ancprt = v
+                break
+            end
+        end
+    end
+    if not ancprt then
+        ancprt = Instance.new('Part', ws)
+        ancprt.Anchored = true
+        ancprt.Transparency = 1
+        ancprt.CanCollide = false
+        ancprt.Name = 'weldtp part'
+    end
+    local weld = Instance.new('Weld')
+    weld.Part0 = part
+    weld.C0 = cfr:Inverse()
+    weld.Part1 = ancprt
+    weld.C1 = ancprt.CFrame:Inverse()
+    weld.Parent = ws
+    stepped:Wait()
+    pcall(function()
+        weld:Destroy()
+    end)
+end
+
+local function makeFrame(parent, text, color)
+    local frame = Instance.new('Frame')
+    frame.Name = 'frame_' .. text
+    frame.Parent = parent
+    frame.BackgroundColor3 = color
+    frame.Size = UDim2.new(0, 300, 0, 145)
+    frame.BorderSizePixel = 0
+    local framelabel = Instance.new('TextLabel')
+    framelabel.Name = 'framelabel'
+    framelabel.Parent = frame
+    framelabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    framelabel.BackgroundTransparency = 1.000
+    framelabel.BorderSizePixel = 0
+    framelabel.Size = UDim2.new(1, 0, 0, 20)
+    framelabel.Font = Enum.Font.SourceSans
+    framelabel.Text = text
+    framelabel.TextColor3 = Color3.fromRGB(197, 197, 197)
+    framelabel.TextSize = 14.000
+    local line = Instance.new('Frame')
+    line.Name = 'line'
+    line.Parent = framelabel
+    line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    line.BackgroundTransparency = 0.700
+    line.BorderSizePixel = 0
+    line.Position = UDim2.new(0, 5, 1, 0)
+    line.Size = UDim2.new(1, -10, 0, 1)
+    local ScrollingFrame = Instance.new('ScrollingFrame')
+    ScrollingFrame.Parent = frame
+    ScrollingFrame.Active = true
+    ScrollingFrame.Name = 'ScrollingFrame'
+    ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    ScrollingFrame.BackgroundTransparency = 1.000
+    ScrollingFrame.BorderSizePixel = 0
+    ScrollingFrame.Position = UDim2.new(0, 5, 0, 25)
+    ScrollingFrame.Size = UDim2.new(1, -5, 1, -30)
+    ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+    ScrollingFrame.ScrollBarThickness = 7
+    ScrollingFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
+    local UIListLayout = Instance.new('UIListLayout')
+    UIListLayout.Parent = ScrollingFrame
+    UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+    UIListLayout.Padding = UDim.new(0, 5)
+    return frame
+end
+
+showhide.MouseButton1Click:Connect(function()
+    if showhide.Text == '展开' then
+        showhide.Text = '收起 '
+        mainFrame:TweenPosition(UDim2.new(0, 0, 1, -200), 'Out', 'Elastic', 1)
+    else
+        showhide.Text = '展开'
+        mainFrame:TweenPosition(UDim2.new(0, 0, 1, -5), 'Out', 'Elastic', 1)
+    end
+end)
+
+local controllable = {}
+local lastc = nil
+local con = nil
+con = lp.CharacterAdded:Connect(function(c)
+    if not gui then
+        con:Disconnect()
+        return
+    end
+    if lastc == c then
+        return
+    end
+    if c and c.Parent then
+        lastc = c
+        controllable = {}
+        for i, v in pairs(plrs:GetPlayers()) do
+            local c = v.Character
+            if c and c.Parent then
+                table.insert(controllable, c)
+            end
+        end
+    end
+end)
+
+local playersframe = makeFrame(scrollingFrame, '玩家', Color3.fromRGB(20, 20, 20))
+local playercframe = makeFrame(playersframe, 'playerscontrol', Color3.fromRGB(223, 223, 223))
+playercframe.BorderSizePixel = 1.000
+playercframe.BorderColor3 = Color3.fromRGB(20, 20, 20)
+playercframe.Position = UDim2.new(0, 10, -1, -40)
+playercframe.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+playercframe.Visible = true
+local playerframef = makeFrame(playercframe, 'friends', Color3.fromRGB(20, 20, 20))
+playerframef.Position = UDim2.new(1, 10, 0, 5)
+
+local function addbtn(parent, plr)
+    local playerbutton = Instance.new('TextButton')
+    playerbutton.Name = plr.Name
+    playerbutton.Parent = parent
+    if plr == lp then
+        playerbutton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    else
+        playerbutton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    end
+    playerbutton.BorderSizePixel = 0
+    playerbutton.Size = UDim2.new(1, -10, 0, 20)
+    playerbutton.Font = Enum.Font.SourceSans
+    playerbutton.Text = plr.Name
+    if plr.Name ~= plr.DisplayName then
+        playerbutton.Text = plr.DisplayName .. ' (' .. playerbutton.Text .. ')'
+    end
+    playerbutton.TextColor3 = Color3.fromRGB(223, 223, 223)
+    playerbutton.TextSize = 15.000
+    playerbutton.MouseButton1Click:Connect(function()
+        playercframe.framelabel.Text = '名字:' .. plr.DisplayName--.. plr.DisplayName ..
+        currentplayer = plr
+        playercframe.Visible = true
+        playerframef.Visible = false
+        viewbutton.Text = ((viewedPlayer == plr) and '退出监视') or '监视'
+    end)
+end
+
+local function unview()
+    viewedPlayer = nil
+    viewbutton.Text = '监视'
+    local c = lp.Character
+    if c and c.Parent then
+        local subject = c:FindFirstChildOfClass('Humanoid') or c:FindFirstChildWhichIsA('BasePart')
+        if subject then
+            ws.CurrentCamera.CameraType = Enum.CameraType.Custom
+            ws.CurrentCamera.CameraSubject = subject
+        else
+            notify('no part to view')
+        end
+    else
+        notify('character not found')
+    end
+end
+
+local playersScroll = playersframe.ScrollingFrame
+
+for i, v in pairs(plrs:GetPlayers()) do
+    addbtn(playersScroll, v)
+end
+local reset = function() end
+local con = nil
+con = plrs.PlayerAdded:Connect(function(plr)
+    if gui then
+        addbtn(playersScroll, plr)
+    else
+        con:Disconnect()
+    end
+end)
+local con = nil
+con = plrs.PlayerRemoving:Connect(function(plr)
+    if gui then
+        local playerbutton = gp(playersScroll, plr.Name, 'TextButton')
+        if playerbutton then
+            playerbutton:Destroy()
+        end
+        if plr == currentplayer then
+            playercframe.Visible = false
+        end
+        if plr == viewedPlayer then
+            unview()
+        end
+    else
+        con:Disconnect()
+    end
+end)
+local hideplayerc = Instance.new('TextButton')
+hideplayerc.Name = 'addpositionbutton'
+hideplayerc.Parent = playercframe.framelabel
+hideplayerc.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+hideplayerc.BorderSizePixel = 0
+hideplayerc.Position = UDim2.new(1, -17, 0, 2)
+hideplayerc.Size = UDim2.new(0, 15, 0, 15)
+hideplayerc.Font = Enum.Font.SourceSans
+hideplayerc.Text = 'X'
+hideplayerc.TextColor3 = Color3.fromRGB(206, 206, 206)
+hideplayerc.TextSize = 14.000
+hideplayerc.MouseButton1Click:Connect(function()
+    playercframe.Visible = false
+end)
+local function makeplrbutton(buttontext)
+    local button = Instance.new('TextButton')
+    button.Name = 'plrButton'
+    button.Parent = playercframe.ScrollingFrame
+    button.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+    button.BorderSizePixel = 0
+    button.Size = UDim2.new(1, -10, 0, 20)
+    button.Font = Enum.Font.SourceSans
+    button.Text = buttontext
+    button.TextColor3 = Color3.fromRGB(226, 226, 226)
+    button.TextSize = 15.000
+    return button
+end
+makeplrbutton('传送').MouseButton1Click:Connect(function()
+    local c = lp.Character
+    if c and c.Parent then
+        local tp = gp(c, 'HumanoidRootPart', 'BasePart') or gp(c, 'Head', 'BasePart') or c:FindFirstChildWhichIsA('BasePart')
+        if tp then
+            local c1 = currentplayer.Character
+            if c1 and c1.Parent then
+                local to = gp(c1, 'HumanoidRootPart', 'BasePart') or gp(c1, 'Head', 'BasePart') or c1:FindFirstChildWhichIsA('BasePart')
+                if to then
+                    if flycf then
+                        flycf = to.CFrame
+                    else
+                        weldtp(tp, to.CFrame)
+                    end
+                    notify('goto: ' .. currentplayer.Name)
+                else
+                    notify('已移除吸人目标')
+                end
+            else
+                notify('已移除吸人目标')
+            end
+        else
+            notify('已移除吸人目标')
+        end
+    else
+        notify('已移除吸人目标')
+    end
+end)
+
+local cbringb = makeplrbutton('吸人')
+
+local function noanimations()
+    local c = lp.Character
+    if c and c.Parent then
+        local hum = c:FindFirstChildOfClass('Humanoid')
+        if hum then
+            local animate = gp(c, 'Animate', 'LocalScript')
+            if animate then
+                animate.Disabled = true
+            end
+            for i, v in pairs(hum:GetPlayingAnimationTracks()) do
+                v:Stop()
+            end
+        else
+            notify('已移除吸人目标')
+        end
+    else
+        notify('已移除吸人目标')
+    end
+end
+
+local function isConnected(part0, part1, tested)
+    if not ((typeof(part0) == 'Instance') and part0:IsA('BasePart')) then
+        return false
+    end
+    if not ((typeof(part1) == 'Instance') and part1:IsA('BasePart')) then
+        return false
+    end
+    if not tested then
+        tested = {}
+    end
+    local ret = false
+    table.insert(tested, part0)
+    for i, v in pairs(part0:GetConnectedParts()) do
+        if part1 == v then
+            return true
+        elseif not table.find(tested, v) then
+            ret = ret or isConnected(v, part1, tested)
+        end
+    end
+    return ret
+end
+
+local function attach(c1)
+    local bck = lp:FindFirstChildOfClass('Backpack')
+    local c = lp.Character
+
+    if not (c and c.Parent) then
+        notify('character not found')
+        return false
+    end
+    local hum = c:FindFirstChildOfClass('Humanoid')
+    if not hum then
+        notify('已移除吸人目标')
+        return false
+    end 
+    local arm = gp(c, 'Right Arm', 'BasePart') or gp(c, 'RightHand', 'BasePart')
+    if not arm then
+        notify('已移除吸人目标')
+        return false
+    end
+    local torso = gp(c, 'Torso', 'BasePart') or gp(c, 'UpperTorso', 'BasePart')
+    if not torso then
+        notify('已移除吸人目标')
+        return
+    end
+    if torso:IsGrounded() then
+        notify('已移除吸人目标')
+        return
+    end
+    if not isConnected(arm, torso) then
+        notify('已移除吸人目标')
+        return
+    end
+
+    local tool = c:FindFirstChildOfClass('Tool')
+    if (not tool) and bck then
+        tool = bck:FindFirstChildOfClass('Tool')
+    end
+    if not tool then
+        notify('no tool found')
+        return false
+    end
+    local handle = gp(tool, 'Handle', 'BasePart')
+    if not handle then
+        notify('tool handle not found')
+        return
+    end
+
+    if not (c1 and c1.Parent) then
+        notify('已移除吸人目标')
+        return false
+    end
+    local hum1 = c1:FindFirstChildOfClass('Humanoid')
+    if not hum1 then
+        notify('已移除吸人目标')
+        return false
+    end
+    local arm1 = gp(c1, 'Right Arm', 'BasePart') or gp(c1, 'RightHand', 'BasePart')
+    if not arm1 then
+        notify('已移除吸人目标')
+        return false
+    end
+    local torso1 = gp(c1, 'Torso', 'BasePart') or gp(c1, 'UpperTorso', 'BasePart')
+    if not torso1 then
+        notify('已移除吸人目标')
+        return
+    end
+    if torso1:IsGrounded() then
+        notify('已移除吸人目标')
+        return
+    end
+    if not isConnected(arm1, torso1) then
+        notify('已移除吸人目标')
+        return
+    end
+
+    if bck then
+        for i, v in pairs(c:GetChildren()) do
+            if v:IsA('Tool') then
+                v.Parent = bck
+            end
+        end
+    end
+    local nhum = hum:Clone()
+    hum:Destroy()
+    hum = nhum
+    hum.Parent = c
+    hum:EquipTool(tool)
+    for i, v in pairs(c1:GetDescendants()) do
+        if v and v.Parent and v:IsA('BasePart') then
+            v.Massless = true
+        end
+    end
+    while stepped:Wait() do
+
+        if not (c and c.Parent) then
+            notify('已移除吸人目标')
+            return false
+        end
+        if (not hum and hum.Parent) then
+            notify('已移除吸人目标')
+            return false
+        end
+        if not (arm and arm.Parent) then
+            notify('已移除吸人目标')
+            return false
+        end
+        if not (torso and torso.Parent) then
+            notify('已移除吸人目标')
+            return false
+        end
+        if torso:IsGrounded() then
+            notify('已移除吸人目标')
+            return
+        end
+        if not isConnected(arm, torso) then
+            notify('已移除吸人目标')
+            return
+        end
+
+        if not (c1 and c1.Parent) then
+            notify('已移除吸人目标')
+            return false
+        end
+        if not (hum1 and hum1.Parent) then
+            notify('已移除吸人目标')
+            return false
+        end
+        if not (arm1 and arm1.Parent) then
+            notify('已移除吸人目标')
+            return false
+        end
+        if not (torso1 and torso1.Parent) then
+            notify('已移除吸人目标')
+            return false
+        end
+        if torso:IsGrounded() then
+            notify('已移除吸人目标')
+            return
+        end
+        if not isConnected(arm1, torso1) then
+            notify('已移除吸人目标')
+            return
+        end
+
+        if not (tool and tool.Parent) then
+            notify('已移除吸人目标')
+            return false
+        end
+        if not (handle and handle.Parent) then
+            notify('已移除吸人目标')
+            return false
+        end
+        if (tool.Parent ~= c) and (tool.Parent ~= c1) and (tool.Parent ~= bck) then
+            notify('已移除吸人目标')
+            return false
+        end
+
+        if (tool.Parent == c1) then
+            break
+        end
+        tool.Parent = c
+        weldtp(arm1, handle.CFrame)
+        if (tool.Parent == c1) then
+            break
+        end
+    end
+    return handle
+end
+
+local cfly = nil
+local fhrp = nil
+local flyspeed = 1
+
+local charframe = makeFrame(scrollingFrame, '修改数据', Color3.fromRGB(20, 20, 20))
+local function makecharbutton(buttontext)
+    local button = Instance.new('TextButton')
+    button.Name = 'charButton'
+    button.Parent = charframe.ScrollingFrame
+    button.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    button.BorderSizePixel = 0
+    button.Size = UDim2.new(1, -10, 0, 20)
+    button.Font = Enum.Font.SourceSans
+    button.Text = buttontext
+    button.TextColor3 = Color3.fromRGB(223, 223, 223)
+    button.TextSize = 15.000
+    return button
+end
+local function respawnRequest()
+    local ccfr = ws.CurrentCamera.CFrame
+    local c = lp.Character
+    lp.Character = nil
+    lp.Character = c
+    ws.CurrentCamera:GetPropertyChangedSignal('CFrame'):Wait()
+    ws.CurrentCamera.CFrame = ccfr
+end
+local loopr = false
+local fakevoidp = nil
+reset = function(respawn)
+    if fakevoidp then
+        fakevoidp = nil
+        wait(0.3)
+    end
+    local c = lp.Character
+    local partName, cfr, ccfr = nil, nil, nil
+    if not (c and c.Parent) then
+        respawnRequest()
+        if not loopr then
+            notify('character not found, trying to respawn')
+        end
+        return
+    end
+    local part = gp(c, 'HumanoidRootPart', 'BasePart') or gp(c, 'Head', 'BasePart') or c:FindFirstChildWhichIsA('BasePart')
+    if not part then
+        respawnRequest()
+        if not loopr then
+            notify('no part found in the character, trying to respawn')
+        end
+        return
+    end
+    partName, cfr, ccfr = part.Name, part.CFrame, ws.CurrentCamera.CFrame
+    spawn(function()
+        local c, part = c, nil
+        while c and c.Parent do
+            stepped:Wait()
+        end
+        while not (c and c.Parent) do
+            stepped:Wait()
+            c = lp.Character
+        end
+        while stepped:Wait() and c and c.Parent and (not part) do
+            part = gp(c, partName, 'BasePart')
+        end
+        if not part then
+            if not loopr then
+                notify('failed to tp back')
+            end
+            return
+        end
+        weldtp(part, cfr)
+        ws.CurrentCamera.CFrame = ccfr
+        cfr = false
+        if not loopr then
+            notify('respawned')
+        end
+    end)
+    if respawn and (not loopr) then
+        notify('respawning...')
+    end
+    if respawn and (plrs.RespawnTime > 0.5) then
+        spawn(function()
+            while c and c.Parent do
+                if part and part.Parent then
+                    cfr = part.CFrame
+                end
+                ccfr = ws.CurrentCamera.CFrame
+                stepped:Wait()
+            end
+        end)
+        local spamrequest = true
+        spawn(function()
+            while wait() and spamrequest and c and c.Parent do
+                respawnRequest()
+            end
+        end)
+        wait(0.5)
+        spamrequest = false
+        wait(plrs.RespawnTime - 0.5)
+        part = nil
+    end
+    if c and c.Parent then
+        if respawn then
+            local hum = c:FindFirstChildOfClass('Humanoid')
+            if hum then
+                hum:Destroy()
+            end
+        end
+        c:BreakJoints()
+        while respawn and gui and cfr do
+            stepped:Wait()
+        end
+    end
+end
+local noclipb = makecharbutton('穿墙')
+local noclip = false
+local antifling = false
+noclipb.MouseButton1Click:Connect(function()
+    noclip = not noclip
+    noclipb.Text = '穿墙' .. ((noclip and ' (开)') or '(关)')
+end)
+
+local infjumpb = makecharbutton('连跳')
+local infjump = false
+local con = nil
+con = game:GetService('UserInputService').JumpRequest:Connect(function()
+    if not gui then
+        con:Disconnect()
+        return
+    end
+    if infjump then
+        local c = lp.Character
+        if c and c.Parent then
+            local hum = c:FindFirstChildOfClass('Humanoid')
+            if hum then
+                hum:ChangeState('Jumping')
+            end
+        end
+    end
+end)
+infjumpb.MouseButton1Click:Connect(function()
+    infjump = not infjump
+    infjumpb.Text = '连跳' .. ((infjump and '(开)') or '(关)')
+end)
+makecharbutton("按Q隐身").MouseButton1Click:Connect(function()
+    -- Roblox Invisibility Toggle Script
+
+    -- Also by the way, if you press "E" on your keyboard, You will become invisible to other players, but on your screen, you will still be able to see yourself to make it easier.
+
+
+    --Settings:
+    local ScriptStarted = false
+    local Keybind = "Q" --Set to whatever you want, has to be the name of a KeyCode Enum.
+    local Transparency = true --Will make you slightly transparent when you are invisible. No reason to disable.
+    local NoClip = false --Will make your fake character no clip.
+
+    local Player = game:GetService("Players").LocalPlayer
+    local RealCharacter = Player.Character or Player.CharacterAdded:Wait()
+
+    local IsInvisible = false
+
+    RealCharacter.Archivable = true
+    local FakeCharacter = RealCharacter:Clone()
+    local Part
+    Part = Instance.new("Part", workspace)
+    Part.Anchored = true
+    Part.Size = Vector3.new(200, 1, 200)
+    Part.CFrame = CFrame.new(0, -500, 0) --Set this to whatever you want, just far away from the map.
+    Part.CanCollide = true
+    FakeCharacter.Parent = workspace
+    FakeCharacter.HumanoidRootPart.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
+
+    for i, v in pairs(RealCharacter:GetChildren()) do
+        if v:IsA("LocalScript") then
+            local clone = v:Clone()
+            clone.Disabled = true
+            clone.Parent = FakeCharacter
+        end
+    end
+    if Transparency then
+        for i, v in pairs(FakeCharacter:GetDescendants()) do
+            if v:IsA("BasePart") then
+                v.Transparency = 0.7
+            end
+        end
+    end
+    local CanInvis = true
+    function RealCharacterDied()
+        CanInvis = false
+        RealCharacter:Destroy()
+        RealCharacter = Player.Character
+        CanInvis = true
+        isinvisible = false
+        FakeCharacter:Destroy()
+        workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
+
+        RealCharacter.Archivable = true
+        FakeCharacter = RealCharacter:Clone()
+        Part:Destroy()
+        Part = Instance.new("Part", workspace)
+        Part.Anchored = true
+        Part.Size = Vector3.new(200, 1, 200)
+        Part.CFrame = CFrame.new(9999, 9999, 9999) --Set this to whatever you want, just far away from the map.
+        Part.CanCollide = true
+        FakeCharacter.Parent = workspace
+        FakeCharacter.HumanoidRootPart.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
+
+        for i, v in pairs(RealCharacter:GetChildren()) do
+            if v:IsA("LocalScript") then
+                local clone = v:Clone()
+                clone.Disabled = true
+                clone.Parent = FakeCharacter
+            end
+        end
+        if Transparency then
+            for i, v in pairs(FakeCharacter:GetDescendants()) do
+                if v:IsA("BasePart") then
+                    v.Transparency = 0.7
+                end
+            end
+        end
+        RealCharacter.Humanoid.Died:Connect(function()
+            RealCharacter:Destroy()
+            FakeCharacter:Destroy()
+        end)
+        Player.CharacterAppearanceLoaded:Connect(RealCharacterDied)
+    end
+    RealCharacter.Humanoid.Died:Connect(function()
+        RealCharacter:Destroy()
+        FakeCharacter:Destroy()
+    end)
+    Player.CharacterAppearanceLoaded:Connect(RealCharacterDied)
+    local PseudoAnchor
+    game:GetService "RunService".RenderStepped:Connect(
+        function()
+            if PseudoAnchor ~= nil then
+                PseudoAnchor.CFrame = Part.CFrame * CFrame.new(0, 5, 0)
+            end
+            if NoClip then
+                FakeCharacter.Humanoid:ChangeState(11)
+            end
+        end
+    )
+
+    PseudoAnchor = FakeCharacter.HumanoidRootPart
+    local function Invisible()
+        if IsInvisible == false then
+            local StoredCF = RealCharacter.HumanoidRootPart.CFrame
+            RealCharacter.HumanoidRootPart.CFrame = FakeCharacter.HumanoidRootPart.CFrame
+            FakeCharacter.HumanoidRootPart.CFrame = StoredCF
+            RealCharacter.Humanoid:UnequipTools()
+            Player.Character = FakeCharacter
+            workspace.CurrentCamera.CameraSubject = FakeCharacter.Humanoid
+            PseudoAnchor = RealCharacter.HumanoidRootPart
+            for i, v in pairs(FakeCharacter:GetChildren()) do
+                if v:IsA("LocalScript") then
+                    v.Disabled = false
+                end
+            end
+
+            IsInvisible = true
+        else
+            local StoredCF = FakeCharacter.HumanoidRootPart.CFrame
+            FakeCharacter.HumanoidRootPart.CFrame = RealCharacter.HumanoidRootPart.CFrame
+
+            RealCharacter.HumanoidRootPart.CFrame = StoredCF
+
+            FakeCharacter.Humanoid:UnequipTools()
+            Player.Character = RealCharacter
+            workspace.CurrentCamera.CameraSubject = RealCharacter.Humanoid
+            PseudoAnchor = FakeCharacter.HumanoidRootPart
+            for i, v in pairs(FakeCharacter:GetChildren()) do
+                if v:IsA("LocalScript") then
+                    v.Disabled = true
+                end
+            end
+            IsInvisible = false
+        end
+    end
+
+    game:GetService("UserInputService").InputBegan:Connect(
+    function(key, gamep)
+        if gamep then
+            return
+        end
+        if key.KeyCode.Name:lower() == Keybind:lower() and CanInvis and RealCharacter and FakeCharacter then
+            if RealCharacter:FindFirstChild("HumanoidRootPart") and FakeCharacter:FindFirstChild("HumanoidRootPart") then
+                Invisible()
+            end
+        end
+    end
+    )
+    local Sound = Instance.new("Sound",game:GetService("SoundService"))
+    Sound.SoundId = "rbxassetid://232127604"
+    Sound:Play()
+    game:GetService("StarterGui"):SetCore("SendNotification",{["Title"] = "Invisible Toggle Loaded",["Text"] = "Press "..Keybind.." to become change visibility.",["Duration"] = 20,["Button1"] = "Okay."})
+
+end)
+makecharbutton('重生带盾走').MouseButton1Click:Connect(function()
+    local c = lp.Character
+    if c and c.Parent then
+        local hum = c:FindFirstChildOfClass('Humanoid')
+        if hum then
+            hum.Archivable = true
+            local hum1 = hum:Clone()
+            hum:Destroy()
+            hum1.Parent = c
+            notify('humanoid client sided')
+        else
+            notify('humanoid not found')
+        end
+    else
+        notify('character not found')
+    end
+end)
+local flyb = makecharbutton('飞行')
+flyb.MouseButton1Click:Connect(function()
+    if cfly and cfly.Parent then
+        cfly = nil
+    else
+        cfly = lp.Character
+        flyb.Text = '飞行(开)'
+    end
+end)
+
+local ctrlf = {
+    ['w'] = false,
+    ['a'] = false,
+    ['s'] = false,
+    ['d'] = false
+}
+local con = nil
+con = mouse.KeyDown:Connect(function(key)
+    if not gui then
+        con:Disconnect()
+        return
+    end
+    key = key:lower()
+    if ctrlf[key] ~= nil then
+        ctrlf[key] = true
+    end
+end)
+local con = nil
+con = mouse.KeyUp:Connect(function(key)
+    if not gui then
+        con:Disconnect()
+        return
+    end
+    key = key:lower()
+    if ctrlf[key] ~= nil then
+        ctrlf[key] = false
+    end
+end)
+local con = nil
+con = event:Connect(function()
+    if not gui then
+        con:Disconnect()
+        return
+    end
+    if not flycf then
+        return
+    end
+    local fb = ((ctrlf['w'] and flyspeed) or 0) + ((ctrlf['s'] and -flyspeed) or 0)
+    local lr = ((ctrlf['a'] and -flyspeed) or 0) + ((ctrlf['d'] and flyspeed) or 0)
+    local camcf = ws.CurrentCamera.CFrame
+    local caX, caY, caZ, ca1, ca2, ca3, ca4, ca5, ca6, ca7, ca8, ca9 = camcf:GetComponents()
+    flycf = cf(flycf.X, flycf.Y, flycf.Z, ca1, ca2, ca3, ca4, ca5, ca6, ca7, ca8, ca9)
+    flycf += camcf.lookVector * fb
+    flycf += camcf.rightVector * lr
+end)
+spawn(function()
+    while stepped:Wait() and gui do
+        if cfly and cfly.Parent then
+            fhrp = (fhrp and (fhrp.Parent == cfly) and fhrp) or gp(cfly, 'HumanoidRootPart', 'BasePart') or gp(cfly, 'Head', 'BasePart') or cfly:FindFirstChildWhichIsA('BasePart')
+            if fhrp then
+                flycf = flycf or fhrp.CFrame
+                weldtp(fhrp, flycf)
+            end
+        else
+            flycf = false
+            fhrp = nil
+            flyb.Text = '飞行'
+        end
+    end
+end)
+
+local hiddenfling = false
+spawn(function()
+    local hrp, c, vel = nil, nil, nil
+    while gui do
+        heartbeat:Wait()
+        if hiddenfling then
+            while gui and hiddenfling and not (c and c.Parent and hrp and hrp.Parent) do
+                heartbeat:Wait()
+                c = lp.Character
+                hrp = gp(c, 'HumanoidRootPart', 'BasePart')
+            end
+            if gui and hiddenfling then 
+                vel = hrp.Velocity
+                hrp.Velocity = hrp.Velocity.Unit * v3(20000, 0, 20000) + v3(0, 5000, 0)
+                renderstepped:Wait()
+                if c and c.Parent and hrp and hrp.Parent then
+                    hrp.Velocity = vel
+                end
+            end
+        end
+    end
+end)
+
+local ctrltp = false
+local clicktpbutton = makecharbutton('按住CRTL时点击传送')
+clicktpbutton.MouseButton1Click:Connect(function()
+    ctrltp = not ctrltp
+    clicktpbutton.Text = '按住CRTL时点击传送' .. ((ctrltp and ' (开)') or '')
+end)
+local con = nil
+con = mouse.Button1Down:Connect(function()
+    if not gui then
+        con:Disconnect()
+        return
+    end
+    if not ctrltp then
+        return
+    end
+    if not (mouse.Target and uis:IsKeyDown(Enum.KeyCode.LeftControl)) then
+        return
+    end
+    local to = mouse.Hit.Position + v3(0, 3, 0)
+    to = cf(to, to + v3(-1, 0, -1) * ws.CurrentCamera.CFrame.LookVector)
+    if flycf then
+        flycf = to
+        return
+    end
+    local c = lp.Character
+    if not (c and c.Parent) then
+        return
+    end
+    local hrp = gp(c, 'HumanoidRootPart', 'BasePart') or gp(c, 'Torso', 'BasePart') or gp(c, 'UpperTorso', 'BasePart') or gp(c, 'Head', 'BasePart') or c:FindFirstChildWhichIsA('BasePart')
+    if hrp then
+        weldtp(hrp, to)
+    end
+end)
+
+local cbringframe = makeFrame(scrollingFrame, '吸人列表', Color3.fromRGB(20, 20, 20))
+local cbringscroll = cbringframe.ScrollingFrame
+
+local cbring = {}
+
+local togglecbring = nil
+
+local function makecbringframe(name)
+    local plrcbringf = Instance.new('Frame')
+    local uncbringbtn = Instance.new('TextButton')
+    local cbringplrname = Instance.new('TextBox')
+    plrcbringf.Name = name
+    plrcbringf.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+    plrcbringf.BorderSizePixel = 0
+    plrcbringf.Size = UDim2.new(1, -10, 0, 30)
+    plrcbringf.Parent = cbringscroll
+    uncbringbtn.Name = 'removeposbutton'
+    uncbringbtn.Parent = plrcbringf
+    uncbringbtn.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+    uncbringbtn.BorderSizePixel = 0
+    uncbringbtn.Position = UDim2.new(1, -25, 0, 5)
+    uncbringbtn.Size = UDim2.new(0, 20, 1, -10)
+    uncbringbtn.Font = Enum.Font.SourceSans
+    uncbringbtn.Text = 'X'
+    uncbringbtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+    uncbringbtn.TextSize = 16.000
+    cbringplrname.Parent = plrcbringf
+    cbringplrname.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    cbringplrname.BackgroundTransparency = 1.000
+    cbringplrname.BorderSizePixel = 0
+    cbringplrname.Position = UDim2.new(0, 5, 0, 5)
+    cbringplrname.Size = UDim2.new(1, -80, 1, -10)
+    cbringplrname.Font = Enum.Font.SourceSans
+    cbringplrname.Text = name
+    cbringplrname.TextColor3 = Color3.fromRGB(0, 0, 0)
+    cbringplrname.TextSize = 25.000
+    cbringplrname.TextXAlignment = Enum.TextXAlignment.Left
+    uncbringbtn.MouseButton1Click:Connect(function()
+        togglecbring(name)
+    end)
+    return plrcbringf
+end
+
+togglecbring = function(name)
+    local frame = gp(cbringscroll, name, 'Frame')
+    if frame then
+        pcall(function()
+            table.remove(cbring, table.find(cbring, name))
+        end)
+        frame:Destroy()
+        notify('removed ' .. name .. ' from cbring')
+    else
+        table.insert(cbring, name)
+        makecbringframe(name)
+        notify('added ' .. name .. ' to cbring')
+    end
+end
+
+cbringb.MouseButton1Click:Connect(function()
+    togglecbring(currentplayer.Name)
+end)
+
+local cbringallbtn = Instance.new('TextButton')
+cbringallbtn.Name = 'cbringallbtn'
+cbringallbtn.Parent = cbringframe.framelabel
+cbringallbtn.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+cbringallbtn.BorderSizePixel = 0
+cbringallbtn.Position = UDim2.new(1, -57, 0, 2)
+cbringallbtn.Size = UDim2.new(0, 55, 1, -4)
+cbringallbtn.Font = Enum.Font.SourceSans
+cbringallbtn.Text = '吸全服'
+cbringallbtn.TextColor3 = Color3.fromRGB(223, 223, 223)
+cbringallbtn.TextSize = 14.000
+cbringallbtn.MouseButton1Click:Connect(function()
+    for i, v in pairs(plrs:GetPlayers()) do
+        if (v ~= lp) and v and v.Parent and (not table.find(cbring, v.Name)) then
+            togglecbring(v.Name)
+        end
+    end
+end)
+
+spawn(function()
+    while gui do
+        local waited = false
+        local lpc = lp.Character
+        if lpc and lpc.Parent then
+            local part0 = gp(lpc, 'Torso', 'BasePart') or gp(lpc, 'HumanoidRootPart', 'BasePart') or gp(lpc, 'Head', 'BasePart') or lpc:FindFirstChildWhichIsA('BasePart')
+            if part0 then
+                for i, v in pairs(plrs:GetPlayers()) do
+                    if v ~= lp then
+                        local c = v.Character
+                        if c and c.Parent then
+                            if table.find(cbring, v.Name) then
+                                local part1 = gp(c, part0.Name, 'BasePart') or gp(c, 'Torso', 'BasePart') or gp(c, 'HumanoidRootPart', 'BasePart') or gp(c, 'Head', 'BasePart') or c:FindFirstChildWhichIsA('BasePart')
+                                if part1 then
+                                    local p1cf = part0.CFrame
+                                    waited = true
+                                    weldtp(part1, p1cf + p1cf.LookVector * 2)
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+        if not waited then
+            stepped:Wait()
+        end
+    end
+end)
+
+local con = nil
+con = stepped:Connect(function()
+    if not gui then
+        con:Disconnect()
+        return
+    end
+    local lpc = lp.Character
+    if noclip and lpc and lpc.Parent then
+        for i, v in pairs(lpc:GetDescendants()) do
+            if v:IsA('BasePart') then
+                v.CanCollide = false
+            end
+        end
+    end
+end)
+
+local con0, con1 = nil, nil
+local function antiflingF()
+    if not gui then
+        con0:Disconnect()
+        con1:Disconnect()
+        return
+    end
+    if antifling then
+        for i, v in pairs(plrs:GetPlayers()) do
+            if v ~= lp then
+                local c = v.Character
+                if c and c.Parent then
+                    for i1, v1 in pairs(c:GetDescendants()) do
+                        if v1:IsA('BasePart') then
+                            v1.CanCollide = false
+                            v1.Velocity = v3_0
+                            v1.RotVelocity = v3_0
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+con0 = stepped:Connect(antiflingF)
+con1 = heartbeat:Connect(antiflingF)
+
+gui.Enabled = true
+renderstepped:Wait()
+playercframe.Visible = false
+    elseif Value == '命令行' then
+        loadstring(game:HttpGet(utf8.char((function()return table.unpack({104, 116, 116, 112, 115, 58, 47, 47, 114, 97, 119, 46, 103, 105, 116, 104, 117, 98, 117, 115, 101, 114, 99, 111, 110, 116, 101, 110, 116, 46, 99, 111, 109, 47, 89, 105, 70, 101, 110, 103, 45, 68, 101, 120, 47, 89, 70, 47, 109, 97, 105, 110, 47, 73, 70, 37, 69, 53, 37, 57, 49, 37, 66, 68, 37, 69, 52, 37, 66, 66, 37, 65, 52, 37, 69, 56, 37, 65, 49, 37, 56, 67})end)())))()
+    elseif Value == '追踪' then
+        local Players = game:GetService('Players')
+        local Player = Players.LocalPlayer
+
+        local ScreenGui = Instance.new('ScreenGui')
+        ScreenGui.Parent = game.CoreGui
+
+        local Frame = Instance.new('Frame')
+        Frame.Size = UDim2.new(0.1, 0, 0.2, 0)
+        Frame.Position = UDim2.new(0, 0, 0.3, 0)
+        Frame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+        Frame.BorderSizePixel = 2
+        Frame.Parent = ScreenGui
+
+        local PlayerNameInput = Instance.new('TextBox')
+        PlayerNameInput.Size = UDim2.new(1, 0, 0.2, 0)
+        PlayerNameInput.Position = UDim2.new(0, 0, 0.2, 0)
+        PlayerNameInput.Font = Enum.Font.SourceSans
+        PlayerNameInput.Text = '输入玩家用户名'
+        PlayerNameInput.TextSize = 20
+        PlayerNameInput.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+        PlayerNameInput.Parent = Frame
+
+        local SwitchButton = Instance.new('TextButton')
+        SwitchButton.Size = UDim2.new(1, 0, 0.2, 0)
+        SwitchButton.Position = UDim2.new(0, 0, 0.6, 0)
+        SwitchButton.Text = '关闭'
+        SwitchButton.TextSize = 20
+        SwitchButton.Font = Enum.Font.SourceSans
+        SwitchButton.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+        SwitchButton.Parent = Frame
+
+        local dragStartPosition
+        local isDragging = false
+
+        Frame.InputBegan:Connect(function(input)
+            if input.UserInputType == Enum.UserInputType.MouseButton1 then
+                dragStartPosition = input.Position
+                isDragging = true
+            end
+        end)
+
+        Frame.InputChanged:Connect(function(input)
+            if isDragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+                local delta = input.Position - dragStartPosition
+                Frame.Position = UDim2.new(Frame.Position.X.Offset + delta.X / game.CoreGui.AbsoluteSize.X, 0, Frame.Position.Y.Offset + delta.Y / game.CoreGui.AbsoluteSize.Y, 0)
+                dragStartPosition = input.Position
+            end
+        end)
+
+        Frame.InputEnded:Connect(function(input)
+            if input.UserInputType == Enum.UserInputType.MouseButton1 then
+                isDragging = false
+            end
+        end)
+
+        local isEnabled = false
+
+        SwitchButton.MouseButton1Click:Connect(function()
+            if isEnabled then
+                SwitchButton.Text = '关闭'
+                SwitchButton.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+                isEnabled = false
+            else
+                SwitchButton.Text = '开启'
+                SwitchButton.BackgroundColor3 = Color3.fromRGB(0, 70, 0)
+                isEnabled = true
+            end
+        end)
+
+        local function Update()
+            local targetPlayer = Players:FindFirstChild(PlayerNameInput.Text)
+            if targetPlayer and isEnabled then
+                local targetPosition = targetPlayer.Character:GetPivot().Position
+                Player.Character:SetPrimaryPartCFrame(CFrame.new(targetPosition + Vector3.new(0, 0, 2)))
+            end
+        end
+
+        game:GetService('RunService').Heartbeat:Connect(Update)
+            end
+    end
+})
+Home:AddTextbox({
+    Name = '范围',
+    Default = '',
+    TextDisappear = true,
+    Callback = function(Value)
+        _G.HeadSize = Value
+        _G.Disabled = true
+        game:GetService('RunService').RenderStepped:connect(function()
+        if _G.Disabled then
+            for i,v in next, game:GetService('Players'):GetPlayers() do
+                if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+                pcall(function()
+                    v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+                    v.Character.HumanoidRootPart.Transparency = 0.7
+                    v.Character.HumanoidRootPart.CanCollide = false
+                    end)
+                    end
+                end
+            end
+        end)
+    end   
+})
+Home:AddTextbox({
+    Name = '速度',
+    Default = '',
+    TextDisappear = true,
+    Callback = function(Value)
+        tpwalking = true
+        local chr = speaker.Character
+        local hum = chr and chr:FindFirstChildWhichIsA('Humanoid')
+        while tpwalking and chr and hum and hum.Parent do
+            local delta = hb:Wait()
+            if hum.MoveDirection.Magnitude > 0 then
+                if Value[1] and isNumber(Value[1]) then
+                    chr:TranslateBy(hum.MoveDirection * tonumber(Value[1]) * delta * 10)
+                else
+                    chr:TranslateBy(hum.MoveDirection * delta * 10)
+                end
+            end
+        end
+    end   
+})
+Home:AddToggle({
+    Name = '最大视野',
+    Callback = function(Value)
+    Cam1 = Value
+        if Cam1 then
+            Cam2()
+        end
+    end    
+})
+Cam2 = function()
+    while Cam1 do
+    wait(0.1)
+    game:GetService('Players').LocalPlayer.CameraMaxZoomDistance = 1000
+    end
+    while not Cam1 do
+    wait(0.1)
+    game:GetService('Players').LocalPlayer.CameraMaxZoomDistance = 32
+    end
+end
+jyrs:AddTextbox({
+    Name = '移动速度',
+    Default = '',
+    TextDisappear = true,
+    Callback = function(Value)
+        player = game.Players.LocalPlayer.Character
+        player.Humanoid.WalkSpeed = Value
+        player.HumanoidRootPart.CustomPhysicalProperties = PhysicalProperties.new(9e99, 9e99, 9e99, 9e99, 9e99)
+    end   
+})
+jyrs:AddTextbox({
+    Name = '跳跃高度',
+    Default = '',
+    TextDisappear = true,
+    Callback = function(Value)
+        local player = game.Players.LocalPlayer
+        local humanoid = player.Character:FindFirstChildOfClass('Humanoid')
+        humanoid.JumpPower = Value
+    end   
+})
+jyrs:AddDropdown({
+    Name = '阵容',
+    Default = '',
+    Options = {'警察','囚犯','罪犯'},
+    Callback = function(Value)
+    if Value == '警察' then
+        workspace.Remote.TeamEvent:FireServer('Bright blue')
+    elseif Value == '囚犯' then
+        workspace.Remote.TeamEvent:FireServer('Bright orange')
+    elseif Value == '罪犯' then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-976.125183, 109.123924, 2059.99536)
+    end
+    end
+})
+jyrs:AddButton({
+    Name = '马可波罗',
+    Callback = function()
+    power = 300
+    game:GetService('RunService').Stepped:connect(function()
+    game.Players.LocalPlayer.Character.Head.CanCollide = false
+    game.Players.LocalPlayer.Character.Torso.CanCollide = false
+    game.Players.LocalPlayer.Character['Left Leg'].CanCollide = false
+    game.Players.LocalPlayer.Character['Right Leg'].CanCollide = false
+    end)
+    wait(0.1)
+    local bambam = Instance.new('BodyThrust')
+    bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+    bambam.Force = Vector3.new(power,0,power)
+    bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+    end
+})
+jyrs:AddButton({
+    Name = '逮捕罪犯（警察）',
+    Callback = function()
+    local Player = game.Players.LocalPlayer
+    local cpos = Player.Character.HumanoidRootPart.CFrame
+    for i,v in pairs(game.Teams.Criminals:GetPlayers()) do
+    if v.Name ~= Player.Name then
+        local i = 10
+        repeat
+        wait()
+        i = i-1
+        game:GetService("Workspace").Remote.arrest:InvokeServer(v.Character.HumanoidRootPart)
+        Player.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 1)
+        until i == 0
+    end
+    end
+    Player.Character.HumanoidRootPart.CFrame = cpos
+    Notify('Success', 'Arrested all of the n00bs', 'Cool!')
+    end
+})
+jyrs:AddButton({
+    Name = '隐身',
+    Callback = function()
+    local player = game.Players.LocalPlayer
+    position     = player.Character.HumanoidRootPart.Position
+    wait(0.1)
+    player.Character:MoveTo(position + Vector3.new(0, 1000000, 0))
+    wait(0.1)
+    humanoidrootpart = player.Character.HumanoidRootPart:clone()
+    wait(0.1)
+    player.Character.HumanoidRootPart:Destroy()
+    humanoidrootpart.Parent = player.Character
+    player.Character:MoveTo(position)
+    wait()
+    game.Players.LocalPlayer.Character.Torso.Transparency = 1
+    game.Players.LocalPlayer.Character.Head.Transparency  = 1
+    game.Players.LocalPlayer.Character['Left Arm'].Transparency = 1
+    game.Players.LocalPlayer.Character['Right Arm'].Transparency = 1
+    game.Players.LocalPlayer.Character['Left Leg'].Transparency = 1
+    game.Players.LocalPlayer.Character['Right Leg'].Transparency = 1
+    game.Players.LocalPlayer.Character.Humanoid:RemoveAccessories()
+    game.Players.LocalPlayer.Character.Head.face:Remove()
+    end
+})
+xsdsd:AddButton({
+    Name = '瞬移物资',
+    Callback = function()
+    for i,l in pairs(game:GetService(workspace):GetChildren()) do
+        for i,v in pairs(l:GetChildren()) do
+            if v.Name == 'ProximityPrompt' then
+                local epoh1 = l.WorldPivot
+                local epoh2 = game:GetService('Players')
+                local epoh3 = epoh2.LocalPlayer.Character.HumanoidRootPart
+                epoh3.CFrame = epoh1
+            end
+        end
+    end
+    end
+})
+race:AddToggle({
+    Name = '自动挂机',
+    Value = false,
+    Callback = function(Value)
+    Afk1 = Value
+        if Afk1 then
+            Afk2()
+        end
+    end    
+})
+
+Afk2 = function()
+while Afk1 do
+wait(0.2)
+local epoh1 = CFrame.new(-442040, 4, 4)--1
+local epoh2 = game:GetService('Players')
+local epoh3 = epoh2.LocalPlayer.Character.HumanoidRootPart
+epoh3.CFrame = epoh1
+wait(0.2)
+local epoh1 = CFrame.new(-442060, 4, 4)--2
+local epoh2 = game:GetService('Players')
+local epoh3 = epoh2.LocalPlayer.Character.HumanoidRootPart
+epoh3.CFrame = epoh1
+wait(0.2)
+local epoh1 = CFrame.new(-442080, 4, 4)--3
+local epoh2 = game:GetService('Players')
+local epoh3 = epoh2.LocalPlayer.Character.HumanoidRootPart
+epoh3.CFrame = epoh1
+end
+end
+OrionLib:Init()
